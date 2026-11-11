@@ -2055,6 +2055,15 @@
 @media (prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.hero-names .char{opacity:1!important;transform:none!important}.photo-card{opacity:1!important}.photo-card__inner{transform:none!important}}
 
 html {scroll-padding-top:74px;scroll-behavior:smooth;} .footer-actions .footer-share {margin-top:20px;color:#fff8ee;border-color:#e2c18a;background:rgba(40,20,10,.35);} .footer-actions .footer-share:hover{color:#33291f;background:#ead09f;}
+
+/* Background music: accessible, responsive, never autoplayed before a guest interaction. */
+#music-toggle { position:fixed; z-index:90; right:18px; bottom:18px; bottom:calc(18px + env(safe-area-inset-bottom, 0px)); display:flex; align-items:center; gap:9px; min-height:42px; padding:10px 14px; background:rgba(31,26,23,.85); color:#fff5e8; border:1px solid rgba(229,196,133,.65); border-radius:50px; box-shadow:0 5px 22px rgba(0,0,0,.22); backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); font:500 11px/1.2 'Poppins',sans-serif; letter-spacing:.4px; cursor:pointer; opacity:0; pointer-events:none; transform:translateY(8px); transition:opacity .3s,transform .3s,background .2s; }
+#music-toggle.is-visible { opacity:1; pointer-events:auto; transform:translateY(0); }
+#music-toggle:hover { background:rgba(50,41,32,.96); }
+#music-toggle:focus-visible { outline:3px solid #e9b96e; outline-offset:3px; }
+#music-toggle .music-note { font-size:18px; line-height:1; }
+@media(max-width:600px) { #music-toggle { right:12px; bottom:calc(12px + env(safe-area-inset-bottom,0px)); min-height:42px; padding:10px 12px; } }
+@media(prefers-reduced-motion:reduce) { #music-toggle { transition:none; } }
 </style>
 </head>
 <body>
@@ -2067,6 +2076,10 @@ html {scroll-padding-top:74px;scroll-behavior:smooth;} .footer-actions .footer-s
 <div id="petal-field"></div>
 <div id="particles"></div>
 <div class="copy-toast" id="copy-toast">Copied to clipboard</div>
+
+<!-- Same background music supplied with the original Jishnu & Vibha reference. -->
+<audio id="background-music" preload="none" loop aria-label="Wedding background music"><source src="background-music.mp3" type="audio/mpeg"></audio>
+<button id="music-toggle" type="button" aria-label="Play background music" aria-pressed="false" title="Play background music"><span class="music-note" aria-hidden="true">♫</span><span class="music-text">Music off</span></button>
 <!-- ============ MAIN SITE ============ -->
 <div id="site"><nav aria-label="Main navigation" class="ak-nav"><a class="ak-brand" href="#hero">A <span>&amp;</span> K</a><div class="ak-links"><a href="#story">Our Story</a><a href="#events">Events</a><a href="#gallery">Photos</a><a href="#location">Venues</a><a class="ak-rsvp" href="#rsvp">RSVP</a></div></nav>
 <!-- HERO -->
@@ -2303,8 +2316,30 @@ html {scroll-padding-top:74px;scroll-behavior:smooth;} .footer-actions .footer-s
   const $$ = s => Array.from(document.querySelectorAll(s));
   const site = $('#site'), intro = $('#intro-screen'), openBtn = $('#open-invitation');
   document.body.style.overflow = 'hidden';
+  // Playback starts only after a guest taps Open Invitation (required by mobile browsers).
+  const bgMusic=$('#background-music'), musicBtn=$('#music-toggle');
+  const musicLabel=musicBtn.querySelector('.music-text');
+  bgMusic.volume=0.38;
+  function showMusicState(){
+    const active=!bgMusic.paused;
+    musicBtn.setAttribute('aria-pressed',String(active));
+    musicBtn.setAttribute('aria-label',active?'Pause background music':'Play background music');
+    musicBtn.title=active?'Pause background music':'Play background music';
+    musicLabel.textContent=active?'Music on':'Music off';
+  }
+  function startMusic(){
+    // This function must be called synchronously from a user click.
+    try {const attempt=bgMusic.play();if(attempt && typeof attempt.catch==='function')attempt.catch(()=>{showMusicState();});}
+    catch(e){showMusicState();}
+  }
+  bgMusic.addEventListener('play',showMusicState);
+  bgMusic.addEventListener('pause',showMusicState);
+  musicBtn.addEventListener('click',()=>{if(bgMusic.paused)startMusic();else bgMusic.pause();});
+
   function openInvitation(){
     if(intro.classList.contains('fade-out')) return;
+    musicBtn.classList.add('is-visible');
+    startMusic();
     intro.classList.add('fade-out'); site.style.opacity='1'; document.body.style.overflow='';
     setTimeout(()=>intro.remove(),1100);
     $$('.hero-names .char').forEach((el,i)=>setTimeout(()=>el.classList.add('in'),i*48));

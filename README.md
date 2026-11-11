@@ -28,3 +28,7 @@ Upload **all** files in this folder to a static host such as GitHub Pages, Netli
 
 ## Later improvement (optional)
 If the client wants RSVP submissions recorded in Google Sheets rather than WhatsApp, add a *new dedicated* Google Apps Script integration and update the submit handler. The original sample's endpoint and guest data are not included or used.
+
+
+## Background music
+The file `background-music.mp3` has been converted from `music.webm` bundled with the user-supplied `jishnu-vibha-main.zip` reference website. It begins after the user clicks **Open Invitation** and loops continuously; the floating **Music on/off** control can pause/resume it. Browsers intentionally block unprompted audio autoplay. Verify that you have the necessary rights to publish the audio on your website.
