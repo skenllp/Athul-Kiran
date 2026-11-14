@@ -2159,6 +2159,11 @@ html {scroll-padding-top:74px;scroll-behavior:smooth;} .footer-actions .footer-s
 .art-chapter .event-venue{font-size:clamp(12.5px,3.3vw,14px)!important;font-weight:400!important}
 .art-chapter .event-venue b{font-size:clamp(15px,4vw,17px)!important;font-weight:600!important}
 .art-chapter .dress-code{font-size:12px!important;font-weight:600!important}
+/* ---------- tighter chapters ---------- */
+.art-chapter,.art-chapter.reverse{min-height:0!important;justify-content:flex-start!important;padding:46px 18px 34px!important;gap:10px!important}
+.art-chapter+.art-chapter{margin-top:0!important}
+.event-grid{gap:0!important;row-gap:0!important}
+.art-chapter .event-actions{margin-top:6px}
 #events{padding-bottom:0!important}
 .sd-count{margin-top:26px;text-align:center;opacity:0;transform:translateY(16px);visibility:hidden;max-height:0;overflow:hidden;transition:opacity .9s ease .2s,transform .9s ease .2s}
 .sd-count.show{opacity:1;transform:none;visibility:visible;max-height:260px}
