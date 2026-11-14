@@ -3,25 +3,28 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
+<link href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2317250f'/%3E%3Ctext x='32' y='42' font-size='28' text-anchor='middle' fill='%23e9d6a6' font-family='Georgia,serif' font-style='italic'%3EA%26amp;K%3C/text%3E%3C/svg%3E" rel="icon"/>
 <meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
-<title>Athul Raj &amp; Kiran Santhosh | 10 Years of Love</title>
-<meta content="Celebrate 10 years of love with Athul Raj &amp; Kiran Santhosh. Carnival, Cocktail, Wedding and Reception · 6–10 January 2027 · Kozhikode, Kerala." name="description"/>
+<title>Athul Raj &amp; Kiran Santhosh | Wedding Invitation</title>
+<meta content="You are warmly invited to the wedding celebrations of Athul Raj &amp; Kiran Santhosh: Carnival Night, Cocktail Night, Wedding and Reception · 6–10 January 2027 · Kozhikode, Kerala." name="description"/>
 <!-- Open Graph / WhatsApp / Facebook link preview -->
 <meta content="website" property="og:type"/>
-<meta content="https://YOUR-DOMAIN.example/" property="og:url"/>
-<meta content="Athul &amp; Kiran | 10 Years of Love" property="og:title"/>
+<meta content="https://athul-kiran.vercel.app/" property="og:url"/>
+<meta content="Athul Raj &amp; Kiran Santhosh | Wedding Invitation" property="og:title"/>
 <meta content="Join us for four celebrations, 6–10 January 2027, in Kozhikode, Kerala." property="og:description"/>
-<meta content="https://YOUR-DOMAIN.example/og-image.jpg" property="og:image"/>
-<meta content="1200" property="og:image:width"/>
-<meta content="630" property="og:image:height"/>
+<meta content="https://athul-kiran.vercel.app/og-chase-full.jpg" property="og:image"/>
+<meta content="1024" property="og:image:width"/>
+<meta content="1280" property="og:image:height"/>
 <!-- Twitter Card -->
 <meta content="summary_large_image" name="twitter:card"/>
-<meta content="Athul &amp; Kiran | 10 Years of Love" name="twitter:title"/>
+<meta content="Athul Raj &amp; Kiran Santhosh | Wedding Invitation" name="twitter:title"/>
 <meta content="Join us for four celebrations, 6–10 January 2027, in Kozhikode, Kerala." name="twitter:description"/>
-<meta content="https://YOUR-DOMAIN.example/og-image.jpg" name="twitter:image"/>
+<meta content="https://athul-kiran.vercel.app/og-chase-full.jpg" name="twitter:image"/>
+<link as="image" fetchpriority="high" href="hero-bg.jpg" media="(min-width:701px)" rel="preload"/>
+<link as="image" fetchpriority="high" href="gallery/forest-portrait.jpg" media="(max-width:700px)" rel="preload"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&amp;family=Great+Vibes&amp;family=Poppins:wght@200;300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600&amp;family=Poppins:wght@200;300;400;500;600&amp;display=swap" rel="stylesheet"/>
 <style>
     :root {
       --ivory: #FFFBF3;
@@ -87,68 +90,6 @@
       cursor: pointer;
       border: none;
       background: none;
-    }
-
-    /* ===================== INTRO VIDEO — UNCHANGED ===================== */
-    #intro-screen {
-      position: fixed;
-      inset: 0;
-      z-index: 9999;
-      background: #000;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: opacity 1.3s ease;
-    }
-
-    #intro-video {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-
-    #open-invitation {
-      position: absolute;
-      bottom: 30px;
-      left: 50%;
-      transform: translateX(-50%);
-      padding: 8px 20px;
-      border-radius: 30px;
-      background: rgba(255, 253, 248, 0.18);
-      border: 1px solid rgba(255, 253, 248, 0.55);
-      color: #fffdf8;
-      font-size: 11px;
-      letter-spacing: 1.2px;
-      backdrop-filter: blur(6px);
-      opacity: 0;
-      pointer-events: none;
-      transition: opacity .6s ease, background .3s ease, transform .3s ease;
-      text-transform: uppercase;
-      touch-action: manipulation;
-      z-index: 3;
-    }
-
-    #open-invitation.show {
-      opacity: 1;
-      pointer-events: auto;
-    }
-
-    #open-invitation:hover,
-    #open-invitation:active {
-      background: rgba(255, 253, 248, 0.32);
-      transform: translateX(-50%) scale(0.97);
-    }
-
-    #intro-screen.fade-out {
-      opacity: 0;
-      pointer-events: none;
-    }
-
-    #intro-tap {
-      position: absolute;
-      inset: 0;
-      z-index: 2;
     }
 
     /* ===================== GLOBAL DECOR LAYERS ===================== */
@@ -1986,23 +1927,11 @@
 /* Athul & Kiran custom edition */
 :root { --olive: #79552e; --olive-dark:#5a3c25; --champagne:#c29b65; --champagne-2:#aa7d47; --ivory:#fffaf4; --cream:#f8efe6; --cream-2:#f2e5d7; --ink:#463427; --ink-soft:#755e50; }
 #site {transition:opacity .75s ease;}
-#intro-screen {background:#1c1612;}
-#intro-screen .intro-shade {position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,12,12,.60),transparent 42%,rgba(20,12,12,.68) 100%);pointer-events:none;}
-#intro-screen .intro-copy {position:absolute;z-index:2;top:12%;left:0;right:0;color:#fffaf0;text-align:center;padding:0 22px;text-shadow:0 2px 19px #120d08;pointer-events:none;}
-.intro-kicker {font-family:'Poppins',sans-serif;font-size:12px;letter-spacing:5px;text-transform:uppercase;color:#e6c998}
-.intro-decade {font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(44px,9vw,87px);line-height:1.08;margin:14px 0 5px;font-style:italic;}
-.intro-couple {font-family:'Great Vibes','Cormorant Garamond',cursive;font-size:clamp(56px,12vw,110px);line-height:1.2;}
-.intro-couple span {font-family:'Cormorant Garamond',Georgia,serif;font-size:.63em;color:#e1c187}
-.intro-dates {font-size:12px;letter-spacing:3px;margin-top:12px;color:#fff1d3}
-#open-invitation {opacity:1;pointer-events:auto;bottom:clamp(35px,7vh,90px);padding:13px 31px;background:rgba(49,31,24,.54);font-weight:500;border-color:#e7c998;z-index:5;white-space:nowrap}
 .ak-nav {position:fixed;top:0;left:0;right:0;z-index:90;display:flex;align-items:center;justify-content:space-between;padding:12px clamp(18px,4vw,50px);background:rgba(25,17,14,.61);backdrop-filter:blur(15px);color:#fff8e6;border-bottom:1px solid rgba(234,210,160,.16)}
 .ak-brand {font-family:'Cormorant Garamond',Georgia,serif;font-size:27px;letter-spacing:3px}.ak-brand span{color:#eccb93;font-style:italic}
 .ak-links {display:flex;align-items:center;gap:clamp(10px,2vw,27px)}.ak-links a {font-size:10px;letter-spacing:1.3px;text-transform:uppercase;color:#ffeedb;white-space:nowrap}
 .ak-links a:hover,.ak-links a:focus-visible{color:#eacc8c}.ak-links .ak-rsvp {padding:8px 15px;border:1px solid #ceae77;border-radius:99px}
-.love-stamp {font-family:'Poppins',sans-serif;font-size:clamp(10px,1.5vw,13px);letter-spacing:4px;color:#ffe3b3;margin:8px 0 0}
-#hero .bg-content {padding-top:40px}
 #hero .hero-names .char.in{opacity:1;transform:translateY(0) rotate(0);transition:transform 1.1s cubic-bezier(.2,.8,.2,1),opacity .9s ease}
-#hero .hero-names {font-size:clamp(66px,10vw,145px)}
 #intro-savedate .veil {background:linear-gradient(180deg,rgba(21,16,12,.62),rgba(21,16,12,.62))}
 #chapter-carnival{background:linear-gradient(122deg,#eee6ff,#fff5e8);border-color:#dd8ac4}#chapter-carnival::before{background:linear-gradient(#eb2585,#3729eb)}
 #chapter-carnival .event-title{color:#ab1979}#chapter-carnival .event-num{color:#7524a3}
@@ -2013,8 +1942,6 @@
 .event-chapter {opacity:1;transition:transform .8s ease,box-shadow .35s ease}
 .event-chapter .event-video-wrap {outline-offset:5px;touch-action:manipulation}
 .event-chapter .event-video-wrap:focus-visible {outline:3px solid #ba9261}
-#chapter-cocktail .event-video-wrap video{object-fit:cover;background:transparent}
-#chapter-carnival .event-video-wrap video {object-fit:cover}
 #events .event-chapter .expand-hint{font-size:9px}
 #gallery .photo-card {cursor:pointer}
 #story .tl-item{opacity:1}
@@ -2025,32 +1952,23 @@
 #rsvp .rsvp-submit{width:100%;white-space:normal;line-height:1.6}
 .venue-row .venue-qr {width:62px;height:62px;object-fit:contain;border-radius:8px}
 .event-actions .event-qr {width:80px;height:80px;object-fit:contain;border-radius:9px}
-#intro-video{object-position:center 40%}
-#hero-bg{background-position:center center!important}
 #couple-bg{background-position:center center}
 #footer-bg{background-position:center center}
 @media (max-width:700px){
  .ak-nav{padding:10px 13px}.ak-links{gap:9px}.ak-links a{font-size:9px;letter-spacing:.25px}
- .ak-links a:first-child,.ak-links a:nth-child(3){display:none}
+ .ak-links a:nth-child(2){display:none}
  .ak-links .ak-rsvp{padding:7px 10px}.ak-brand{font-size:23px}
- #hero-bg{background-image:url('gallery/forest-portrait.jpg')!important;background-position:center 35%!important}
  #couple-bg{background-image:url('gallery/hand-in-hand.jpg')!important;background-position:center 44%!important}
  #footer-bg{background-image:url('gallery/formal-portrait.jpg')!important;background-position:center 39%!important}
- #hero .hero-names{font-size:clamp(58px,14vw,82px);line-height:1.07}
- #hero .hero-sub{font-size:10px;letter-spacing:1.5px;line-height:1.8;padding:0 16px}
- #hero .bg-content{transform:translateY(15vh)}
- #hero .veil{background:linear-gradient(180deg,rgba(16,12,8,.10) 0%,rgba(16,12,8,.18) 22%,rgba(16,12,8,.75) 64%,rgba(16,12,8,.8) 100%)!important}
  #intro-savedate{min-height:100vh}
  #intro-savedate .names-sm{font-size:clamp(46px,12vw,68px)}
  #intro-savedate .couple-copy p{font-size:13px;line-height:1.9}
  .event-grid{gap:25px}.event-chapter,.event-chapter.reverse{flex-direction:column;align-items:center;text-align:center;padding:22px 18px}
- .event-video-wrap,#chapter-cocktail .event-video-wrap{width:min(290px,79vw);height:min(515px,128vw);flex:none}
  .event-title{font-size:33px}.event-body{width:100%}
  .event-meta{justify-content:center;font-size:12px}.event-meta span{justify-content:center}
  .event-actions{justify-content:center}.event-venue{font-size:13px}
  #rsvp .rsvp-events{grid-template-columns:1fr}
  .venue-info{width:100%}.venue-actions{flex-wrap:wrap}
- .intro-copy{top:13%!important}
 }
 @media (prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.hero-names .char{opacity:1!important;transform:none!important}.photo-card{opacity:1!important}.photo-card__inner{transform:none!important}}
 
@@ -2064,13 +1982,254 @@ html {scroll-padding-top:74px;scroll-behavior:smooth;} .footer-actions .footer-s
 #music-toggle .music-note { font-size:18px; line-height:1; }
 @media(max-width:600px) { #music-toggle { right:12px; bottom:calc(12px + env(safe-area-inset-bottom,0px)); min-height:42px; padding:10px 12px; } }
 @media(prefers-reduced-motion:reduce) { #music-toggle { transition:none; } }
+
+/* =====================================================================
+   UPDATE — opening artwork, event videos, RSVP (appended overrides)
+   ===================================================================== */
+
+/* ---------- Opening screen: real couple photo (same photo as the hero) ---------- */
+#intro-screen{position:fixed;inset:0;z-index:9999;overflow:hidden;background:#17110d;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;text-align:center;
+  padding:24px 20px clamp(40px,11vh,110px);transition:opacity 1.3s ease}
+#intro-screen.fade-out{opacity:0;pointer-events:none}
+.intro-photo{position:absolute;inset:-4%;background:url('hero-bg.jpg') center/cover no-repeat;animation:slowzoom 36s ease-in-out infinite alternate;will-change:transform}
+.intro-veil{position:absolute;inset:0;background:linear-gradient(180deg,rgba(18,12,7,.18) 0%,rgba(18,12,7,.12) 30%,rgba(18,12,7,.62) 62%,rgba(18,12,7,.82) 100%)}
+.intro-copy{position:relative;z-index:2;width:100%}
+@media (max-width:700px){.intro-photo{background-image:url('gallery/forest-portrait.jpg');background-position:center 30%}}
+.art-names{font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-weight:500;font-size:clamp(44px,12.5vw,60px);line-height:1.02;letter-spacing:.01em;color:#fffdf8;
+  text-shadow:0 3px 22px rgba(10,8,4,.75),0 0 36px rgba(233,214,166,.22)}
+@media (min-width:701px){.art-names{font-size:clamp(58px,6.4vw,100px)}}
+.art-names .name-part{display:block;white-space:nowrap}
+.art-names .amp{display:block;margin:2px 0;font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:.5em;line-height:1;color:var(--soft-gold)}
+.hero-names .char{white-space:pre}
+.art-love{margin-top:14px;font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:clamp(18px,4.6vw,26px);color:#ffe9bf;letter-spacing:.04em;text-shadow:0 2px 14px rgba(10,8,4,.8)}
+.art-dates{margin-top:8px;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#fff1d3;text-shadow:0 2px 12px rgba(10,8,4,.85)}
+#open-invitation{position:relative;margin-top:30px;padding:14px 34px;border-radius:40px;background:rgba(40,28,16,.55);border:1px solid #e7c998;color:#fffaf0;
+  font-size:12px;font-weight:500;letter-spacing:2.2px;text-transform:uppercase;white-space:nowrap;
+  -webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);touch-action:manipulation;animation:openPulse 2.8s ease-in-out infinite;
+  transition:background .3s ease,transform .3s ease}
+#open-invitation:hover,#open-invitation:focus-visible{background:rgba(40,28,16,.78);transform:translateY(-2px)}
+#open-invitation:focus-visible{outline:3px solid #e9b96e;outline-offset:3px}
+@keyframes openPulse{0%,100%{box-shadow:0 0 0 0 rgba(231,201,152,.35)}50%{box-shadow:0 0 0 12px rgba(231,201,152,0)}}
+.art-copy .scroll-cue{position:static;transform:none}
+
+/* ---------- Hero (real couple photo) ---------- */
+#hero{padding-top:0}
+#hero .hero-names{font-size:clamp(58px,7.2vw,116px);line-height:1.04}
+#hero .hero-names .name-part{display:block}
+#hero .hero-names .amp{display:block;margin:0;font-size:.4em;line-height:1.2}
+#hero .hero-sub{margin-top:18px}
+@media (min-width:701px){#hero .bg-content{transform:translateY(21vh)}}   /* keeps the couple's faces clear of the names on desktop */
+#hero .hero-names .char{white-space:pre}
+@media (max-width:700px){
+  #hero-bg{background-image:url('gallery/forest-portrait.jpg')!important;background-position:center 35%!important}
+  #hero .hero-names{font-size:clamp(42px,12.5vw,60px);line-height:1.05}
+  #hero .hero-sub{font-size:10px;letter-spacing:1.5px;line-height:1.8;padding:0 16px}
+  #hero .bg-content{transform:translateY(12vh)}
+  #hero .veil{background:linear-gradient(180deg,rgba(16,12,8,.10) 0%,rgba(16,12,8,.18) 22%,rgba(16,12,8,.75) 64%,rgba(16,12,8,.8) 100%)!important}
+}
+
+/* ---------- Event videos: shown at their true 9:16 ratio, never cropped or dimmed ---------- */
+.event-media{display:flex;flex-direction:column;align-items:center;gap:14px;flex:0 0 auto}
+.event-video-wrap{flex:none;width:250px;height:auto}
+.event-video-wrap .video-inner{width:100%;height:auto;aspect-ratio:9/16}
+.event-video-wrap video{width:100%;height:100%;object-fit:contain;background:#000}
+.event-video-wrap:hover video{transform:none}   /* videos contain invitation text: never zoom/crop on hover */
+.video-controls{display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
+.vc-btn{min-height:38px;padding:9px 14px;border-radius:30px;border:1px solid var(--glass-border);background:rgba(255,255,255,.55);color:var(--olive-dark);
+  font-size:10.5px;letter-spacing:1.2px;text-transform:uppercase;touch-action:manipulation;transition:background .25s,color .25s}
+.vc-btn:hover,.vc-btn[aria-pressed="true"]{background:var(--champagne);color:#fff}
+.vc-btn:focus-visible{outline:3px solid #ba9261;outline-offset:2px}
+@media (max-width:700px){.event-video-wrap{width:min(290px,79vw)}}
+
+
+/* ---------- Wedding + Reception: full images that come alive on scroll (like the reference recording) ---------- */
+.art-chapter,.art-chapter.reverse{
+  /* full-screen page, no card — like the reference recording */
+  display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:14px;
+  width:100vw;margin-left:calc(50% - 50vw);min-height:100vh;min-height:100dvh;padding:76px 18px 56px;
+  background:radial-gradient(ellipse 80% 45% at 50% 30%,rgba(255,246,222,.95),rgba(247,234,208,0) 100%),#f7ead0!important;
+  border:0;border-radius:0;box-shadow:none;backdrop-filter:none;overflow:hidden}
+.art-chapter::before{display:none}
+.art-chapter+.art-chapter{margin-top:-60px}
+@media (max-width:700px){.art-chapter+.art-chapter{margin-top:-25px}}   /* Wedding and Reception pages join with no gap */
+.art-chapter .event-body{width:100%;max-width:760px;flex:none}
+.art-chapter .event-title{white-space:normal}
+.art-chapter .event-meta{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 22px}
+.art-chapter .event-actions{justify-content:center}
+.art-chapter .event-body>*{opacity:0;transform:translateY(18px);transition:opacity .9s ease,transform .9s ease}
+.art-chapter.text-in .event-body>*{opacity:1;transform:none}
+.art-chapter.text-in .event-body>:nth-child(1){transition-delay:.5s}.art-chapter.text-in .event-body>:nth-child(2){transition-delay:.7s}
+.art-chapter.text-in .event-body>:nth-child(3){transition-delay:.9s}.art-chapter.text-in .event-body>:nth-child(4){transition-delay:1.1s}
+.art-chapter.text-in .event-body>:nth-child(5){transition-delay:1.3s}
+.art-stage{position:relative;width:100%;margin:0 auto 4px;isolation:isolate}
+.art-stage.tall{max-width:min(78vw,calc(58dvh*.5625),330px)}
+.art-stage.wide{max-width:min(100vw,1000px)}
+.art-img{display:block;width:100%;height:auto;opacity:0;transform:translateY(34px) scale(.93);filter:blur(10px);
+  transition:opacity 1.2s ease,transform 1.5s cubic-bezier(.2,.7,.2,1),filter 1.2s ease;will-change:transform,opacity}
+.art-stage.in-view .art-img{opacity:1;transform:none;filter:none;animation:artFloat 7s ease-in-out 1.6s infinite}
+@keyframes artFloat{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-8px) scale(1.018)}}
+.art-stage.portrait{max-width:min(84vw,calc(54dvh*.667),420px)}
+.art-stage.portrait .art-img{border-radius:18px;box-shadow:0 18px 44px rgba(40,30,15,.28)}
+.art-glow{position:absolute;inset:6% 4%;z-index:-1;border-radius:50%;opacity:0;
+  background:radial-gradient(closest-side,rgba(240,196,110,.55),rgba(240,196,110,.18) 55%,transparent 75%);filter:blur(18px);transition:opacity 1.6s ease .3s}
+.art-stage.in-view .art-glow{opacity:1;animation:artGlow 6s ease-in-out infinite}
+@keyframes artGlow{0%,100%{transform:scale(.96);opacity:.75}50%{transform:scale(1.06);opacity:1}}
+.art-sparks{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.spark{position:absolute;width:9px;height:9px;opacity:0;background:radial-gradient(circle,#fff6d6 0,#f2c76e 45%,transparent 70%);border-radius:50%}
+.art-stage.in-view .spark{animation:sparkle 4.2s ease-in-out infinite}
+.s1{left:8%;top:18%;animation-delay:.2s!important}.s2{left:22%;top:62%;animation-delay:1.1s!important}.s3{left:36%;top:30%;animation-delay:2s!important}
+.s4{left:50%;top:70%;animation-delay:.6s!important}.s5{left:63%;top:22%;animation-delay:1.6s!important}.s6{left:76%;top:55%;animation-delay:2.6s!important}
+.s7{left:88%;top:28%;animation-delay:.9s!important}.s8{left:92%;top:75%;animation-delay:3.1s!important}
+@keyframes sparkle{0%{opacity:0;transform:translateY(8px) scale(.4)}35%{opacity:1;transform:translateY(-6px) scale(1.2)}70%{opacity:.6;transform:translateY(-16px) scale(.8)}100%{opacity:0;transform:translateY(-26px) scale(.3)}}
+@media (max-width:700px){.art-chapter{padding-left:0!important;padding-right:0!important}.art-chapter .event-body{padding:0 18px}.art-stage.wide{max-width:none}}
+@media (prefers-reduced-motion:reduce){.art-chapter .event-body>*{opacity:1;transform:none;transition:none}.art-img{opacity:1;transform:none;filter:none;transition:none}.art-stage.in-view .art-img,.art-stage.in-view .art-glow,.art-stage.in-view .spark{animation:none}.art-glow{opacity:.8}}
+
+
+/* ---------- Photo gallery: swipe left/right ---------- */
+#gallery .photo-wall{columns:auto!important;display:flex!important;align-items:center;gap:clamp(14px,2.4vw,26px);
+  overflow-x:auto;overflow-y:visible;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain;
+  padding:22px max(16px,calc(50% - 170px)) 34px;scrollbar-width:none;scroll-behavior:smooth}
+#gallery .photo-wall::-webkit-scrollbar{display:none}
+#gallery .photo-card{flex:0 0 min(76vw,330px)!important;width:auto!important;margin:0!important;scroll-snap-align:center;scroll-snap-stop:always;
+  opacity:1!important;transform:none!important;display:block}
+#gallery .photo-card .photo-card__inner{transform:none!important;animation:none!important}
+#gallery .photo-card__paper img{width:100%;height:auto;display:block}
+.gal-hint{margin:2px 0 0;text-align:center;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#a77f3e}
+.gal-arrow{display:none;position:absolute;top:50%;z-index:5;width:46px;height:46px;border-radius:50%;border:1px solid #ceae77;background:rgba(255,250,240,.92);color:#6b4a22;font-size:26px;line-height:1;cursor:pointer;box-shadow:0 6px 18px rgba(60,40,15,.18)}
+.gal-prev{left:6px}.gal-next{right:6px}
+@media (min-width:701px){.gal-arrow{display:block}#gallery .photo-card{flex-basis:340px!important}#gallery .photo-wall{padding-left:max(60px,calc(50% - 170px));padding-right:max(60px,calc(50% - 170px))}}
+
+/* ---------- All four celebrations share one style: full-width page, media on top, details below ---------- */
+.art-stage.vid{max-width:none!important;display:flex;flex-direction:column;align-items:center;gap:12px}
+.art-stage.vid .art-glow{inset:4% 22%}
+.art-stage.vid .event-video-wrap{width:min(78vw,calc(58dvh*.5625),330px)!important;padding:0!important;border:0!important;background:none!important;
+  border-radius:18px;overflow:hidden;box-shadow:0 18px 44px rgba(40,30,15,.28);opacity:0;transform:translateY(34px) scale(.95);
+  transition:opacity 1.2s ease,transform 1.5s cubic-bezier(.2,.7,.2,1)}
+.art-stage.vid.in-view .event-video-wrap{opacity:1;transform:none}
+.art-stage.vid .event-video-wrap::before,.art-stage.vid .event-video-wrap::after{display:none!important}
+.art-stage.vid .video-controls{opacity:0;transition:opacity 1s ease .6s}
+.art-stage.vid.in-view .video-controls{opacity:1}
+@media (prefers-reduced-motion:reduce){.art-stage.vid .event-video-wrap,.art-stage.vid .video-controls{opacity:1;transform:none;transition:none}}
+
+.art-chapter .event-num{color:#a77f3e!important;text-shadow:none!important}
+.art-chapter .event-title{color:var(--olive-dark)!important;text-shadow:none!important;background:none!important;-webkit-text-fill-color:currentColor!important}
+/* ---------- Wedding image sits in the same rounded box as the other celebrations ---------- */
+.art-stage.tall{aspect-ratio:9/16;display:flex;align-items:center;justify-content:center;border-radius:18px;overflow:hidden;
+  background:radial-gradient(ellipse at 50% 38%,#fff3d6 0,#f8dcaa 55%,#efc58a 100%);box-shadow:0 18px 44px rgba(40,30,15,.28)}
+.art-stage.tall .art-glow{display:none}
+.art-stage.tall .art-img{width:100%;height:auto;-webkit-mask-image:linear-gradient(180deg,transparent 0,#000 26%);mask-image:linear-gradient(180deg,transparent 0,#000 26%)}
+.art-stage.tall::before{content:"Athul Raj & Kiran Santhosh";position:absolute;top:9%;left:0;right:0;text-align:center;z-index:2;
+  font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-weight:500;font-size:clamp(20px,5.4vw,25px);color:#8c2f4a;opacity:0;transition:opacity 1.4s ease .5s}
+.art-stage.tall::after{content:"9 January 2027";position:absolute;bottom:9%;left:0;right:0;text-align:center;z-index:2;
+  font-family:'Cormorant Garamond',Georgia,serif;font-size:16px;letter-spacing:5px;text-transform:uppercase;color:#6b4a22;opacity:0;transition:opacity 1.4s ease .8s}
+.art-stage.tall.in-view::before,.art-stage.tall.in-view::after{opacity:1}
+/* ---------- Celebration details: big, bold, highlighted ---------- */
+.art-chapter .event-body{max-width:820px}
+.art-chapter .event-num{display:inline-block;padding:7px 20px;border-radius:999px;font-size:12.5px;font-weight:700;letter-spacing:4px;text-transform:uppercase;
+  color:#fff!important;background:linear-gradient(135deg,#d3a85d,#a77f3e);box-shadow:0 6px 16px rgba(167,127,62,.4)}
+.art-chapter .event-title{font-size:clamp(40px,10.5vw,60px)!important;font-weight:700!important;line-height:1.05;margin:12px 0 10px}
+.art-chapter .event-meta{margin:8px 0 2px;gap:8px 26px}
+.art-chapter .event-meta span{font-weight:700;color:#3d2814;font-size:clamp(15px,4vw,18px)}
+.art-chapter .event-meta span:first-child{font-size:clamp(17px,4.6vw,22px);padding:0 10px;background:linear-gradient(transparent 58%,rgba(240,190,95,.55) 58%)}
+.art-chapter .event-meta span:last-child{font-size:clamp(15px,4vw,18px)}
+.art-chapter .event-venue{margin-top:14px;font-size:clamp(14px,3.8vw,16px);font-weight:600;color:#4a3320;line-height:1.5}
+.art-chapter .event-venue b{display:inline;-webkit-box-decoration-break:clone;box-decoration-break:clone;font-size:clamp(19px,5.2vw,24px);font-weight:700;color:#2f1d0c;line-height:1.2;padding:0 10px;background:linear-gradient(transparent 58%,rgba(240,190,95,.55) 58%)}
+.art-chapter .dress-code{display:inline-block;margin-top:10px;font-size:clamp(13px,3.6vw,15px);font-weight:700;color:#7a4f1a}
+.venue-body .v-label{font-size:12px;font-weight:700}
+.venue-body .v-label b{display:inline-block;padding:1px 8px;border-radius:6px;background:rgba(240,190,95,.55);color:#3d2814;font-size:13px}
+.venue-body .v-name{font-size:clamp(25px,6.4vw,31px)!important;font-weight:700!important;color:#2f1d0c!important}
+.venue-body .v-addr{font-size:15px!important;font-weight:600;color:#4a3320!important}
+/* ---------- no highlight bands / lines; bigger hero + opening dates ---------- */
+.art-chapter .event-meta span:first-child,.art-chapter .event-venue b{background:none!important;padding:0!important}
+.art-chapter .event-meta span:first-child{font-size:clamp(17px,4.6vw,22px)!important;white-space:nowrap}
+.art-chapter .dress-code{border:0!important;padding-bottom:0!important}
+#hero .hero-sub{display:flex!important;flex-direction:column;align-items:center;gap:8px;font-size:inherit!important;letter-spacing:0!important;padding:0 16px!important;margin-top:22px!important}
+#hero .hero-date{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(24px,6.6vw,42px)!important;font-weight:700!important;letter-spacing:.03em;text-transform:none!important;white-space:nowrap;color:#fff;text-shadow:0 3px 18px rgba(0,0,0,.65)}
+#hero .hero-loc{font-size:clamp(15px,4.2vw,22px);font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:#fff1d3;text-shadow:0 2px 14px rgba(0,0,0,.7)}
+#intro-screen .art-dates{font-size:clamp(14px,4vw,19px)!important;font-weight:700!important;letter-spacing:.2em!important}
+/* ---------- softer weight for chapter details ---------- */
+.art-chapter .event-meta span,.art-chapter .event-meta span:first-child,.art-chapter .event-meta span:last-child{font-weight:600!important}
+.art-chapter .event-venue{font-weight:500!important}
+.art-chapter .event-venue b{font-weight:600!important}
+.art-chapter .dress-code{font-weight:600!important}
+.art-chapter .event-title{font-weight:600!important}
+/* ---------- compact chapter details ---------- */
+.art-chapter .event-title{font-size:clamp(30px,8vw,40px)!important}
+.art-chapter .event-meta span,.art-chapter .event-meta span:first-child,.art-chapter .event-meta span:last-child{font-size:clamp(13px,3.5vw,15px)!important;font-weight:500!important}
+.art-chapter .event-venue{font-size:clamp(12.5px,3.3vw,14px)!important;font-weight:400!important}
+.art-chapter .event-venue b{font-size:clamp(15px,4vw,17px)!important;font-weight:600!important}
+.art-chapter .dress-code{font-size:12px!important;font-weight:600!important}
+#events{padding-bottom:0!important}
+.sd-count{margin-top:26px;text-align:center;opacity:0;transform:translateY(16px);visibility:hidden;max-height:0;overflow:hidden;transition:opacity .9s ease .2s,transform .9s ease .2s}
+.sd-count.show{opacity:1;transform:none;visibility:visible;max-height:260px}
+.sd-count-title{font-size:11px;letter-spacing:4px;text-transform:uppercase;color:#f6e8cc;text-shadow:0 2px 12px rgba(0,0,0,.8);margin-bottom:14px}
+.sd-count .flip-row{margin-top:0}
+.sd-count .flip-label{color:#f6e8cc;text-shadow:0 2px 10px rgba(0,0,0,.8)}
+/* ---------- every date is bold ---------- */
+.art-dates,.hero-sub b,.scratch-reveal .rdate,.scratch-reveal .rday,.event-meta span:first-child,.v-label b,.art-stage.tall::after{font-weight:700!important}
+.scratch-reveal .rdate{font-weight:600!important}
+/* ---------- Save-the-date card (reference style) ---------- */
+.scratch-reveal .eyebrow{color:#a77f3e!important;text-shadow:none!important;letter-spacing:5px}
+.scratch-reveal .rdate{font-family:'Cormorant Garamond',Georgia,serif!important;font-style:italic;font-weight:500;font-size:clamp(40px,9vw,60px);line-height:1.05;color:#8c2f4a;letter-spacing:.01em}
+.scratch-reveal .rday{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(18px,3.6vw,22px);letter-spacing:5px;margin-top:6px;color:#6b5a4a}
+
+/* ---------- Venues: photo cards, one clear action each ---------- */
+.location-card{width:min(94vw,980px)!important;padding:34px 28px!important}
+.venue-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;text-align:left}
+.venue-card{display:flex;flex-direction:column;background:rgba(255,255,255,.78);border:1px solid var(--glass-border);border-radius:20px;overflow:hidden;box-shadow:0 12px 30px rgba(60,40,15,.12)}
+.venue-photo{display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:cover}
+.venue-body{display:flex;flex-direction:column;gap:3px;padding:16px 18px 18px;flex:1}
+.venue-body .v-label{font-size:10.5px;letter-spacing:2px;text-transform:uppercase;color:#a77f3e}
+.venue-body .v-name{margin:2px 0 0;font-size:24px;line-height:1.2;color:var(--olive-dark)}
+.venue-body .v-addr{font-size:13px;color:var(--ink-soft);line-height:1.6}
+.venue-cta{margin-top:auto;padding-top:14px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.link-btn{background:none;border:0;padding:6px 2px;font-size:12px;color:var(--olive-dark);text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+@media (max-width:700px){.venue-grid{grid-template-columns:1fr}.location-card{padding:22px 14px!important}}
+.map-embed{margin-top:22px}
+
+/* ---------- Second section (Together With Their Families / Save the Date): light text on the dark veil ---------- */
+#intro-savedate .eyebrow{color:#f2d9a8;text-shadow:0 2px 12px rgba(0,0,0,.7)}
+#intro-savedate .couple-copy.names-sm{color:#fffaf0;font-size:clamp(46px,7vw,76px);line-height:1.15;text-shadow:0 3px 22px rgba(0,0,0,.75)}
+#intro-savedate .couple-copy p{color:#f8eddb;font-size:15.5px;text-shadow:0 2px 14px rgba(0,0,0,.8)}
+#intro-savedate .scratch-hint{color:#f6e8cc;opacity:1;text-shadow:0 2px 12px rgba(0,0,0,.8)}
+@media (max-width:700px){#intro-savedate .couple-copy p{font-size:14px}}
+
+/* ---------- Footer credit ---------- */
+.site-credit-bar{background:#17110d;padding:20px 16px;text-align:center;border-top:1px solid rgba(242,217,168,.18)}
+@media (max-width:600px){.site-credit-bar{padding-bottom:calc(72px + env(safe-area-inset-bottom,0px))}}   /* keeps the credit clear of the floating music button */
+.site-credit{margin:0;font-size:11px;letter-spacing:1.6px;text-transform:uppercase;color:rgba(255,248,238,.82);text-shadow:0 2px 10px rgba(0,0,0,.7)}
+.site-credit a{color:#f2d9a8;font-weight:500;border-bottom:1px solid rgba(242,217,168,.55);padding-bottom:2px;transition:color .25s,border-color .25s}
+.site-credit a:hover,.site-credit a:focus-visible{color:#fff;border-color:#fff}
+
+/* ---------- Names: serif italic so the capital letters (A, K, R, S) are clear ---------- */
+.hero-names,h2.names-sm,.footer-content .fnames{font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-weight:500;letter-spacing:.01em}
+.hero-names .amp{display:block;margin:2px 0;font-size:.5em;line-height:1}
+#intro-savedate .couple-copy.names-sm{font-size:clamp(44px,6.4vw,72px);line-height:1.1}
+.footer-content .fnames{font-size:clamp(40px,6vw,72px)}
+
+/* ---------- RSVP ---------- */
+.rsvp-card .hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0;pointer-events:none}
+.rsvp-status{min-height:20px;margin-top:14px;font-size:13px;line-height:1.6;text-align:center;color:var(--ink-soft)}
+.rsvp-status.error{color:#9b2c2c}
+.rsvp-status a{text-decoration:underline;font-weight:500}
+.rsvp-submit[disabled]{opacity:.65;cursor:progress}
+.rsvp-success h3{font-size:34px;color:var(--olive-dark);margin-bottom:8px}
+.rsvp-success p{font-size:14px;line-height:1.8;color:var(--ink-soft)}
+.rsvp-card form[hidden]{display:none}
 </style>
 </head>
 <body>
-<!-- ============ INTRO VIDEO (UNCHANGED) ============ -->
-<div id="intro-screen"><video autoplay="" id="intro-video" loop="" muted="" playsinline="" poster="covers/intro-poster.jpg" preload="metadata" src="intro.mp4"></video>
-<div class="intro-shade"></div><div class="intro-copy"><div class="intro-kicker">A celebration of</div><div class="intro-decade">10 Years of Love</div><div class="intro-couple">Athul <span>&amp;</span> Kiran</div><div class="intro-dates">06 — 10 JANUARY 2027</div></div>
-<button class="show" id="open-invitation" type="button">Open Invitation <span aria-hidden="true">↗</span></button></div>
+<!-- ============ OPENING SCREEN — real couple photo (the only place "10 Years of Love" appears) ============ -->
+<div id="intro-screen">
+<div aria-hidden="true" class="intro-photo"></div>
+<div aria-hidden="true" class="intro-veil"></div>
+<div class="intro-copy">
+<div class="art-names"><span class="name-part">Athul Raj</span><span class="amp">&amp;</span><span class="name-part">Kiran Santhosh</span></div>
+<div class="art-love">10 Years of Love</div>
+<div class="art-dates">06 — 10 January 2027</div>
+<button id="open-invitation" type="button">Open Invitation <span aria-hidden="true">↗</span></button>
+</div>
+</div>
 <!-- ============ AMBIENT DECOR ============ -->
 <div id="cursor-glow"></div>
 <div id="petal-field"></div>
@@ -2081,17 +2240,14 @@ html {scroll-padding-top:74px;scroll-behavior:smooth;} .footer-actions .footer-s
 <audio id="background-music" preload="none" loop aria-label="Wedding background music"><source src="background-music.mp3" type="audio/mpeg"></audio>
 <button id="music-toggle" type="button" aria-label="Play background music" aria-pressed="false" title="Play background music"><span class="music-note" aria-hidden="true">♫</span><span class="music-text">Music off</span></button>
 <!-- ============ MAIN SITE ============ -->
-<div id="site"><nav aria-label="Main navigation" class="ak-nav"><a class="ak-brand" href="#hero">A <span>&amp;</span> K</a><div class="ak-links"><a href="#story">Our Story</a><a href="#events">Events</a><a href="#gallery">Photos</a><a href="#location">Venues</a><a class="ak-rsvp" href="#rsvp">RSVP</a></div></nav>
+<div id="site"><nav aria-label="Main navigation" class="ak-nav"><a class="ak-brand" href="#hero">A <span>&amp;</span> K</a><div class="ak-links"><a href="#events">Events</a><a href="#gallery">Photos</a><a href="#location">Venues</a><a class="ak-rsvp" href="#rsvp">RSVP</a></div></nav>
 <!-- HERO -->
 <section class="section bg-section" id="hero">
-<div class="bg-layer" id="hero-bg" style="background-image:url('hero-bg.jpg');background-position:center center;">
-</div>
-<div class="veil" style="background:linear-gradient(180deg, rgba(18,12,7,0.32) 0%, rgba(18,12,7,0.62) 32%, rgba(18,12,7,0.66) 62%, rgba(18,12,7,0.4) 100%);">
-</div>
+<div class="bg-layer" id="hero-bg" style="background-image:url('hero-bg.jpg');background-position:center center;"></div>
+<div class="veil" style="background:linear-gradient(180deg, rgba(18,12,7,0.32) 0%, rgba(18,12,7,0.62) 32%, rgba(18,12,7,0.66) 62%, rgba(18,12,7,0.4) 100%);"></div>
 <div class="bg-content">
-<div class="monogram">TEN YEARS OF LOVE</div>
-<h1 class="hero-names script" id="hero-names"><span class="name-part">Athul</span> <span class="amp serif">&amp;</span> <span class="name-part">Kiran</span></h1>
-<p class="love-stamp">TEN YEARS, ONE BEAUTIFUL JOURNEY</p><p class="hero-sub">06 – 10 JANUARY 2027  ·  KOZHIKODE, KERALA</p>
+<h1 aria-label="Athul Raj and Kiran Santhosh" class="hero-names script" id="hero-names"><span class="name-part">Athul Raj</span><span class="amp serif">&amp;</span><span class="name-part">Kiran Santhosh</span></h1>
+<p class="hero-sub"><b class="hero-date">06 – 10 January 2027</b><span class="hero-loc">Kozhikode, Kerala</span></p>
 </div>
 <div class="scroll-cue"><span>Scroll</span><span class="line"></span></div>
 </section>
@@ -2102,20 +2258,34 @@ html {scroll-padding-top:74px;scroll-behavior:smooth;} .footer-actions .footer-s
 <div class="veil"></div>
 <div class="bg-content">
 <div class="eyebrow">Together With Their Families</div>
-<h2 class="couple-copy names-sm script">Athul Raj &amp; Kiran Santhosh</h2>
+<h2 class="couple-copy names-sm script">Athul Raj &amp;<br/>Kiran Santhosh</h2>
 <div class="couple-copy">
-<p>A decade of love, countless cherished moments, and a new chapter together. With our families, we invite you to celebrate four unforgettable occasions with us.</p>
+<p>With the blessings of our families, we joyfully invite you to celebrate four unforgettable occasions with us.</p>
 </div>
 <div class="divider"></div>
 <div class="scratch-wrap">
 <div class="scratch-reveal">
 <div class="eyebrow">Save The Date</div>
-<div class="rdate serif">09 January 2027</div>
-<div class="rday">Saturday · Muhurtham 11:00 – 11:45 AM</div>
+<div class="rdate serif">9 January</div>
+<div class="rday">2027</div>
 </div>
 <canvas id="scratch-canvas"></canvas>
 </div>
 <p class="scratch-hint" id="scratch-hint">Swipe or tap to reveal the date</p>
+<div class="sd-count"><div class="sd-count-title">Counting down to forever</div><div class="flip-row" id="flip-row">
+<div class="flip-unit">
+<div class="flip-box"><span class="flip-num" id="cd-days">00</span></div><span class="flip-label">Days</span>
+</div>
+<div class="flip-unit">
+<div class="flip-box"><span class="flip-num" id="cd-hours">00</span></div><span class="flip-label">Hours</span>
+</div>
+<div class="flip-unit">
+<div class="flip-box"><span class="flip-num" id="cd-mins">00</span></div><span class="flip-label">Mins</span>
+</div>
+<div class="flip-unit">
+<div class="flip-box"><span class="flip-num" id="cd-secs">00</span></div><span class="flip-label">Secs</span>
+</div>
+</div></div>
 </div>
 </section>
 <!-- EVENTS — CINEMATIC CHAPTERS -->
@@ -2123,85 +2293,82 @@ html {scroll-padding-top:74px;scroll-behavior:smooth;} .footer-actions .footer-s
 <div class="eyebrow">The Celebrations</div>
 <h2 style="font-size:clamp(30px,4.5vw,48px);color:var(--olive-dark);">Four Chapters, One Story</h2>
 <div class="event-grid">
-<div class="event-chapter theme-carnival" id="chapter-carnival">
-<div aria-label="Expand Carnival Night animation" class="event-video-wrap" onclick="goFullscreen(this)" role="button" tabindex="0">
+<div class="event-chapter art-chapter theme-carnival" id="chapter-carnival">
+<div class="event-media art-stage vid" data-art>
+<div aria-hidden="true" class="art-glow"></div>
+<div aria-label="Open Carnival Night invitation video full screen" class="event-video-wrap" onclick="goFullscreen(this)" role="button" tabindex="0">
 <div class="video-inner">
-<video class="event-video" loop="" muted="" playsinline="" poster="covers/carnival-poster.jpg" preload="none" src="carnival.mp4"></video>
-<div class="vignette"></div>
+<video aria-label="Carnival Night invitation video" class="event-video" loop="" muted="" playsinline="" poster="covers/carnival-poster.jpg" preload="none" src="carnival.mp4"></video>
 </div>
-<div class="play-badge">▶</div>
-<span class="expand-hint">⤢ Expand</span>
+</div>
+<div class="video-controls"><button class="vc-btn" onclick="goFullscreen(this.closest('.event-media').querySelector('.event-video-wrap'))" type="button">⤢ Full screen</button></div>
 </div>
 <div class="event-body">
 <div class="event-num">Chapter 01</div>
 <h3 class="event-title serif">Carnival Night</h3>
 <div class="event-meta"><span>◷ Wednesday, 6 January 2027</span><span>◷ 4:00 PM – 8:00 PM</span></div>
-<div class="event-venue"><b>Tarang Farm House (Tarang Resort)</b><br/>Kadalundi, Kozhikode, Kerala, India<br/><span class="dress-code">DRESS CODE · Pop-Up Colours</span></div><div class="event-actions"><a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Tarang%20Farm%20House%20%28Tarang%20Resort%29%2C%20Kadalundi%2C%20Kozhikode%2C%20Kerala%2C%20India" rel="noopener noreferrer" target="_blank">View Venue ↗</a> <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=Tarang%20Farm%20House%20%28Tarang%20Resort%29%2C%20Kadalundi%2C%20Kozhikode%2C%20Kerala%2C%20India" rel="noopener noreferrer" target="_blank">Directions ↗</a> <button class="btn solid" onclick="downloadICS('carnival')" type="button">Add to Calendar ↓</button> <img alt="Carnival Night venue QR code" class="event-qr" loading="lazy" src="venues/carnival-qr.png"/></div>
+<div class="event-venue"><b>Tarang Resort</b><br/>Kadalundi, Kozhikode, Kerala, India<br/><span class="dress-code">DRESS CODE · Pop Up Colours</span></div>
+<div class="event-actions"><a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=Tarang%20Resort%2C%20Kadalundi%2C%20Kozhikode%2C%20Kerala%2C%20India" rel="noopener noreferrer" target="_blank">Directions ↗</a> <button class="btn solid" onclick="downloadICS('carnival')" type="button">Add to Calendar ↓</button></div>
 </div>
 </div>
-<div class="event-chapter reverse theme-cocktail" id="chapter-cocktail">
-<div aria-label="Expand Cocktail Night animation" class="event-video-wrap" onclick="goFullscreen(this)" role="button" tabindex="0">
+<div class="event-chapter reverse art-chapter theme-cocktail" id="chapter-cocktail">
+<div class="event-media art-stage vid" data-art>
+<div aria-hidden="true" class="art-glow"></div>
+<div aria-label="Open Cocktail Night invitation video full screen" class="event-video-wrap" onclick="goFullscreen(this)" role="button" tabindex="0">
 <div class="video-inner">
-<video class="event-video" loop="" muted="" playsinline="" poster="covers/cocktail-poster.jpg" preload="none" src="cocktail.mp4"></video>
-<div class="vignette"></div>
+<video aria-label="Cocktail Night invitation video" class="event-video" loop="" muted="" playsinline="" poster="covers/cocktail-poster.jpg" preload="none" src="cocktail.mp4"></video>
 </div>
-<div class="play-badge">▶</div>
-<span class="expand-hint">⤢ Expand</span>
+</div>
+<div class="video-controls"><button class="vc-btn" onclick="goFullscreen(this.closest('.event-media').querySelector('.event-video-wrap'))" type="button">⤢ Full screen</button></div>
 </div>
 <div class="event-body">
 <div class="event-num">Chapter 02</div>
 <h3 class="event-title serif">Cocktail Night</h3>
 <div class="event-meta"><span>◷ Thursday, 7 January 2027</span><span>◷ 5:00 PM – 10:00 PM</span></div>
-<div class="event-venue"><b>Thrithi, By The River</b><br/>Kadalundi, Kozhikode, Kerala, India<br/><span class="dress-code">DRESS CODE · Glitz in Dark Shades</span></div>
-<div class="event-actions"><a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Thrithi%2C%20By%20The%20River%2C%20Kadalundi%2C%20Kozhikode%2C%20Kerala%2C%20India" rel="noopener noreferrer" target="_blank">View Venue ↗</a> <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=Thrithi%2C%20By%20The%20River%2C%20Kadalundi%2C%20Kozhikode%2C%20Kerala%2C%20India" rel="noopener noreferrer" target="_blank">Directions ↗</a> <button class="btn solid" onclick="downloadICS('cocktail')" type="button">Add to Calendar ↓</button> <img alt="Cocktail Night venue QR code" class="event-qr" loading="lazy" src="venues/cocktail-qr.png"/></div>
+<div class="event-venue"><b>Thrithi by the River</b><br/>Kadalundi, Kozhikode, Kerala, India<br/><span class="dress-code">THEME · Glitz in Dark Shades</span></div>
+<div class="event-actions"><a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=Thrithi%20by%20the%20River%2C%20Kadalundi%2C%20Kozhikode%2C%20Kerala%2C%20India" rel="noopener noreferrer" target="_blank">Directions ↗</a> <button class="btn solid" onclick="downloadICS('cocktail')" type="button">Add to Calendar ↓</button></div>
 </div>
 </div>
-<div class="event-chapter theme-wedding" id="chapter-wedding">
-<div aria-label="Expand Wedding Ceremony animation" class="event-video-wrap" onclick="goFullscreen(this)" role="button" tabindex="0">
-<div class="video-inner">
-<video class="event-video" loop="" muted="" playsinline="" poster="covers/wedding-poster.jpg" preload="none" src="wedding.mp4"></video>
-<div class="vignette"></div>
-</div>
-<div class="play-badge">▶</div>
-<span class="expand-hint">⤢ Expand</span>
-</div>
+<div class="event-chapter art-chapter theme-wedding" id="chapter-wedding">
+<div class="art-stage tall" data-art><div aria-hidden="true" class="art-glow"></div><img alt="The couple walking together, their garments tied in a knot" class="art-img" decoding="async" height="1087" loading="lazy" src="wedding-art.webp" width="1446"/><div aria-hidden="true" class="art-sparks"><i class="spark s1"></i><i class="spark s2"></i><i class="spark s3"></i><i class="spark s4"></i><i class="spark s5"></i><i class="spark s6"></i><i class="spark s7"></i><i class="spark s8"></i></div></div>
 <div class="event-body">
 <div class="event-num">Chapter 03</div>
-<h3 class="event-title serif">Wedding Ceremony</h3>
-<div class="event-meta"><span>◷ Saturday, 9 January 2027</span><span>◷ Muhurtham · 11:00 AM – 11:45 AM</span></div>
-<div class="event-venue"><b>K-Hills Convention Centre</b><br/>Ramanattukara–Farook College Road, Farook College, Kozhikode, Kerala, India<br/><span class="dress-code">DRESS CODE · Traditional Attire</span></div>
-<div class="event-actions"><a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=K-Hills%20Convention%20Centre%2C%20Ramanattukara%E2%80%93Farook%20College%20Road%2C%20Farook%20College%2C%20Kozhikode%2C%20Kerala%2C%20India" rel="noopener noreferrer" target="_blank">View Venue ↗</a> <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=K-Hills%20Convention%20Centre%2C%20Ramanattukara%E2%80%93Farook%20College%20Road%2C%20Farook%20College%2C%20Kozhikode%2C%20Kerala%2C%20India" rel="noopener noreferrer" target="_blank">Directions ↗</a> <button class="btn solid" onclick="downloadICS('wedding')" type="button">Add to Calendar ↓</button> <img alt="Wedding Ceremony venue QR code" class="event-qr" loading="lazy" src="venues/wedding-qr.png"/></div>
+<h3 class="event-title serif">The Wedding</h3>
+<div class="event-meta"><span>◷ Saturday, 9 January 2027</span><span>◷ 11:00 AM – 11:45 AM</span></div>
+<div class="event-venue"><b>K-Hills Convention Centre</b><br/>Farook College, Kozhikode, Kerala, India<br/><span class="dress-code">DRESS CODE · Traditional</span></div>
+<div class="event-actions"><a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=K-Hills%20Convention%20Centre%2C%20Farook%20College%2C%20Kozhikode%2C%20Kerala%2C%20India" rel="noopener noreferrer" target="_blank">Directions ↗</a> <button class="btn solid" onclick="downloadICS('wedding')" type="button">Add to Calendar ↓</button></div>
 </div>
 </div>
-<div class="event-chapter reverse theme-reception" id="chapter-reception">
-<div aria-label="Expand Wedding Reception animation" class="event-video-wrap" onclick="goFullscreen(this)" role="button" tabindex="0">
+<div class="event-chapter reverse art-chapter theme-reception" id="chapter-reception">
+<div class="event-media art-stage vid" data-art>
+<div aria-hidden="true" class="art-glow"></div>
+<div aria-label="Open The Reception invitation video full screen" class="event-video-wrap" onclick="goFullscreen(this)" role="button" tabindex="0">
 <div class="video-inner">
-<video class="event-video" loop="" muted="" playsinline="" poster="covers/reception-poster.jpg" preload="none" src="reception.mp4"></video>
-<div class="vignette"></div>
+<video aria-label="The Reception invitation video" class="event-video" loop="" muted="" playsinline="" poster="covers/reception-poster.jpg" preload="none" src="reception.mp4"></video>
 </div>
-<div class="play-badge">▶</div>
-<span class="expand-hint">⤢ Expand</span>
+</div>
+<div class="video-controls"><button class="vc-btn" onclick="goFullscreen(this.closest('.event-media').querySelector('.event-video-wrap'))" type="button">⤢ Full screen</button></div>
 </div>
 <div class="event-body">
 <div class="event-num">Chapter 04</div>
-<h3 class="event-title serif">Wedding Reception</h3>
+<h3 class="event-title serif">The Reception</h3>
 <div class="event-meta"><span>◷ Sunday, 10 January 2027</span><span>◷ 5:00 PM – 9:00 PM</span></div>
-<div class="event-venue"><b>Malabar Marina Convention Centre</b><br/>Kerala Tilery, Feroke, near AWH College, Cheruvannur, Kozhikode, Kerala, India<br/><span class="dress-code">DRESS CODE · Party Wear</span></div>
-<div class="event-actions"><a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Malabar%20Marina%20Convention%20Centre%2C%20Kerala%20Tilery%2C%20Feroke%2C%20near%20AWH%20College%2C%20Cheruvannur%2C%20Kozhikode%2C%20Kerala%2C%20India" rel="noopener noreferrer" target="_blank">View Venue ↗</a> <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=Malabar%20Marina%20Convention%20Centre%2C%20Kerala%20Tilery%2C%20Feroke%2C%20near%20AWH%20College%2C%20Cheruvannur%2C%20Kozhikode%2C%20Kerala%2C%20India" rel="noopener noreferrer" target="_blank">Directions ↗</a> <button class="btn solid" onclick="downloadICS('reception')" type="button">Add to Calendar ↓</button> <img alt="Wedding Reception venue QR code" class="event-qr" loading="lazy" src="venues/reception-qr.png"/></div>
+<div class="event-venue"><b>Malabar Marina Convention Centre</b><br/>Kozhikode, Kerala, India<br/><span class="dress-code">DRESS CODE · Party Wear</span></div>
+<div class="event-actions"><a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=Malabar%20Marina%20Convention%20Centre%2C%20Kozhikode%2C%20Kerala%2C%20India" rel="noopener noreferrer" target="_blank">Directions ↗</a> <button class="btn solid" onclick="downloadICS('reception')" type="button">Add to Calendar ↓</button></div>
 </div>
 </div>
 </div>
 </section>
-<!-- LOVE STORY -->
+<!-- OUR STORY SECTION IS HIDDEN. To show it again, delete this line and the closing line (the one with just the two dashes and the arrow).
 <section class="section" id="story">
 <div class="eyebrow">Their Journey</div>
-<h2 style="font-size:clamp(30px,4.5vw,48px);color:var(--olive-dark);">10 Years of Love</h2>
+<h2 style="font-size:clamp(30px,4.5vw,48px);color:var(--olive-dark);">Our Story</h2>
 <div class="timeline">
 <div class="tl-item">
 <div class="tl-dot"></div>
-<div class="tl-year">A DECADE TOGETHER</div>
+<div class="tl-year">TOGETHER</div>
 <h3 class="tl-title serif">Our Story</h3>
-<p class="tl-text">Ten years of love, shared dreams, and memories worth celebrating.</p>
+<p class="tl-text">Shared dreams, endless laughter, and memories worth celebrating.</p>
 </div>
 <div class="tl-item">
 <div class="tl-dot"></div>
@@ -2219,10 +2386,11 @@ html {scroll-padding-top:74px;scroll-behavior:smooth;} .footer-actions .footer-s
 <div class="tl-dot"></div>
 <div class="tl-year">JANUARY 2027</div>
 <h3 class="tl-title serif">Our Next Chapter</h3>
-<p class="tl-text">From a decade of togetherness to a lifetime ahead. We can’t wait to celebrate with you.</p>
+<p class="tl-text">From the love we have shared to a lifetime ahead. We can’t wait to celebrate with you.</p>
 </div>
 </div>
 </section>
+-->
 <!-- GALLERY -->
 <section class="section" id="gallery" style="min-height:auto;padding-bottom:110px;">
 <div aria-hidden="true" class="gallery-rays"></div>
@@ -2232,7 +2400,7 @@ html {scroll-padding-top:74px;scroll-behavior:smooth;} .footer-actions .footer-s
 <div class="divider"></div>
 <p style="max-width:480px;margin-inline:auto;color:var(--ink-soft);font-size:14px;margin-top:-10px;">A few
           cherished frames from our journey together.</p>
-<div class="photo-wall-stage">
+<div class="photo-wall-stage"><p class="gal-hint">Swipe to see more →</p><button aria-label="Previous photo" class="gal-arrow gal-prev" type="button">‹</button><button aria-label="Next photo" class="gal-arrow gal-next" type="button">›</button>
 <div aria-hidden="true" class="photo-wall__fx">
 <span class="photo-decor photo-decor--spark a"></span>
 <span class="photo-decor photo-decor--spark b"></span>
@@ -2240,7 +2408,7 @@ html {scroll-padding-top:74px;scroll-behavior:smooth;} .footer-actions .footer-s
 <span class="photo-decor photo-decor--dot f"></span>
 <span class="photo-decor photo-decor--ray h"></span>
 </div>
-<div aria-label="Wedding photographs" class="photo-wall" id="photoWall"><figure aria-label="View photo 1" class="photo-card photo-card--lg photo-tile" data-enter="up" onclick="openLightbox(0)" role="button" style="--rot:-2.2deg;--nudge-y:-6px;--drift-delay:0.0s;" tabindex="0"><div class="photo-card__inner"><div class="photo-card__paper"><img alt="Athul and Kiran smiling together in the forest" decoding="async" loading="lazy" src="gallery/forest-portrait.jpg"/></div></div></figure><figure aria-label="View photo 2" class="photo-card photo-card--md photo-tile" data-enter="left" onclick="openLightbox(1)" role="button" style="--rot:-1.1deg;--nudge-y:0px;--drift-delay:0.25s;" tabindex="0"><div class="photo-card__inner"><div class="photo-card__paper"><img alt="Athul and Kiran sharing a moment" decoding="async" loading="lazy" src="gallery/together-by-tree.jpg"/></div></div></figure><figure aria-label="View photo 3" class="photo-card photo-card--sm photo-tile" data-enter="right" onclick="openLightbox(2)" role="button" style="--rot:0.0deg;--nudge-y:6px;--drift-delay:0.5s;" tabindex="0"><div class="photo-card__inner"><div class="photo-card__paper"><img alt="Athul carrying Kiran playfully" decoding="async" loading="lazy" src="gallery/piggyback.jpg"/></div></div></figure><figure aria-label="View photo 4" class="photo-card photo-card--lg photo-tile" data-enter="up" onclick="openLightbox(3)" role="button" style="--rot:1.1deg;--nudge-y:-6px;--drift-delay:0.75s;" tabindex="0"><div class="photo-card__inner"><div class="photo-card__paper"><img alt="Athul and Kiran having fun" decoding="async" loading="lazy" src="gallery/playful-spin.jpg"/></div></div></figure><figure aria-label="View photo 5" class="photo-card photo-card--md photo-tile" data-enter="left" onclick="openLightbox(4)" role="button" style="--rot:2.2deg;--nudge-y:0px;--drift-delay:0.0s;" tabindex="0"><div class="photo-card__inner"><div class="photo-card__paper"><img alt="Athul and Kiran walking together" decoding="async" loading="lazy" src="gallery/hand-in-hand.jpg"/></div></div></figure><figure aria-label="View photo 6" class="photo-card photo-card--sm photo-tile" data-enter="right" onclick="openLightbox(5)" role="button" style="--rot:-2.2deg;--nudge-y:6px;--drift-delay:0.25s;" tabindex="0"><div class="photo-card__inner"><div class="photo-card__paper"><img alt="Athul and Kiran celebrating" decoding="async" loading="lazy" src="gallery/celebration-detail.jpg"/></div></div></figure><figure aria-label="View photo 7" class="photo-card photo-card--lg photo-tile" data-enter="up" onclick="openLightbox(6)" role="button" style="--rot:-1.1deg;--nudge-y:-6px;--drift-delay:0.5s;" tabindex="0"><div class="photo-card__inner"><div class="photo-card__paper"><img alt="Athul and Kiran in wedding attire" decoding="async" loading="lazy" src="gallery/wedding-embrace.jpg"/></div></div></figure><figure aria-label="View photo 8" class="photo-card photo-card--md photo-tile" data-enter="left" onclick="openLightbox(7)" role="button" style="--rot:0.0deg;--nudge-y:0px;--drift-delay:0.75s;" tabindex="0"><div class="photo-card__inner"><div class="photo-card__paper"><img alt="Athul and Kiran dressed up together" decoding="async" loading="lazy" src="gallery/formal-portrait.jpg"/></div></div></figure></div>
+<div aria-label="Wedding photographs" class="photo-wall" id="photoWall"><figure aria-label="View photo 1" class="photo-card photo-card--lg photo-tile" data-enter="up" onclick="openLightbox(0)" role="button" style="--rot:-2.2deg;--nudge-y:-6px;--drift-delay:0.0s;" tabindex="0"><div class="photo-card__inner"><div class="photo-card__paper"><img alt="Athul and Kiran smiling together in the forest" decoding="async" loading="lazy" src="gallery/forest-portrait.jpg"/></div></div></figure><figure aria-label="View photo 2" class="photo-card photo-card--md photo-tile" data-enter="left" onclick="openLightbox(1)" role="button" style="--rot:-1.1deg;--nudge-y:0px;--drift-delay:0.25s;" tabindex="0"><div class="photo-card__inner"><div class="photo-card__paper"><img alt="Athul and Kiran sharing a moment" decoding="async" loading="lazy" src="gallery/together-by-tree.jpg"/></div></div></figure><figure aria-label="View photo 3" class="photo-card photo-card--sm photo-tile" data-enter="right" onclick="openLightbox(2)" role="button" style="--rot:0.0deg;--nudge-y:6px;--drift-delay:0.5s;" tabindex="0"><div class="photo-card__inner"><div class="photo-card__paper"><img alt="Athul carrying Kiran playfully" decoding="async" loading="lazy" src="gallery/piggyback.jpg"/></div></div></figure><figure aria-label="View photo 4" class="photo-card photo-card--lg photo-tile" data-enter="up" onclick="openLightbox(3)" role="button" style="--rot:1.1deg;--nudge-y:-6px;--drift-delay:0.75s;" tabindex="0"><div class="photo-card__inner"><div class="photo-card__paper"><img alt="Athul and Kiran having fun" decoding="async" loading="lazy" src="gallery/playful-spin.jpg"/></div></div></figure><figure aria-label="View photo 5" class="photo-card photo-card--md photo-tile" data-enter="left" onclick="openLightbox(4)" role="button" style="--rot:2.2deg;--nudge-y:0px;--drift-delay:0.0s;" tabindex="0"><div class="photo-card__inner"><div class="photo-card__paper"><img alt="Athul and Kiran walking together" decoding="async" loading="lazy" src="gallery/hand-in-hand.jpg"/></div></div></figure><figure aria-label="View photo 6" class="photo-card photo-card--sm photo-tile" data-enter="right" onclick="openLightbox(5)" role="button" style="--rot:-2.2deg;--nudge-y:6px;--drift-delay:0.25s;" tabindex="0"><div class="photo-card__inner"><div class="photo-card__paper"><img alt="Athul and Kiran celebrating" decoding="async" loading="lazy" src="gallery/celebration-detail.jpg"/></div></div></figure><figure aria-label="View photo 7" class="photo-card photo-card--lg photo-tile" data-enter="up" onclick="openLightbox(6)" role="button" style="--rot:-1.1deg;--nudge-y:-6px;--drift-delay:0.5s;" tabindex="0"><div class="photo-card__inner"><div class="photo-card__paper"><img alt="Athul and Kiran in wedding attire" decoding="async" loading="lazy" src="gallery/wedding-embrace.jpg"/></div></div></figure><figure aria-label="View photo 8" class="photo-card photo-card--md photo-tile" data-enter="left" onclick="openLightbox(7)" role="button" style="--rot:0.0deg;--nudge-y:0px;--drift-delay:0.75s;" tabindex="0"><div class="photo-card__inner"><div class="photo-card__paper"><img alt="Athul and Kiran dressed up together" decoding="async" loading="lazy" src="gallery/formal-portrait.jpg"/></div></div></figure><figure aria-label="View photo 9" class="photo-card photo-card--lg photo-tile" data-enter="up" onclick="openLightbox(8)" role="button" tabindex="0"><div class="photo-card__inner"><div class="photo-card__paper"><img alt="Athul and Kiran dancing together in the forest" decoding="async" loading="lazy" src="gallery/dancing-in-forest.jpg"/></div></div></figure><figure aria-label="View photo 10" class="photo-card photo-card--lg photo-tile" data-enter="up" onclick="openLightbox(9)" role="button" tabindex="0"><div class="photo-card__inner"><div class="photo-card__paper"><img alt="Kiran laughing as Athul holds her close" decoding="async" loading="lazy" src="gallery/swirling-dress.jpg"/></div></div></figure><figure aria-label="View photo 11" class="photo-card photo-card--lg photo-tile" data-enter="up" onclick="openLightbox(10)" role="button" tabindex="0"><div class="photo-card__inner"><div class="photo-card__paper"><img alt="Kiran riding on Athul's back, both laughing" decoding="async" loading="lazy" src="gallery/piggyback-laugh.jpg"/></div></div></figure><figure aria-label="View photo 12" class="photo-card photo-card--lg photo-tile" data-enter="up" onclick="openLightbox(11)" role="button" tabindex="0"><div class="photo-card__inner"><div class="photo-card__paper"><img alt="Athul and Kiran laughing in an embrace" decoding="async" loading="lazy" src="gallery/laughing-embrace.jpg"/></div></div></figure></div>
 </div>
 </div>
 </section>
@@ -2251,23 +2419,23 @@ html {scroll-padding-top:74px;scroll-behavior:smooth;} .footer-actions .footer-s
 <img alt="" id="lightbox-img" src=""/>
 <button aria-label="Next" id="lightbox-next">›</button>
 </div>
-<!-- COUNTDOWN -->
-<section class="section marble-bg" id="countdown">
-<div class="eyebrow">Counting Down To Forever</div>
-<h2 style="font-size:clamp(28px,4vw,42px);color:var(--olive-dark);">Until We Say "I Do"</h2>
-<div class="flip-row" id="flip-row">
-<div class="flip-unit">
-<div class="flip-box"><span class="flip-num" id="cd-days">00</span></div><span class="flip-label">Days</span>
-</div>
-<div class="flip-unit">
-<div class="flip-box"><span class="flip-num" id="cd-hours">00</span></div><span class="flip-label">Hours</span>
-</div>
-<div class="flip-unit">
-<div class="flip-box"><span class="flip-num" id="cd-mins">00</span></div><span class="flip-label">Mins</span>
-</div>
-<div class="flip-unit">
-<div class="flip-box"><span class="flip-num" id="cd-secs">00</span></div><span class="flip-label">Secs</span>
-</div>
+<!-- RSVP — submissions are saved to Google Sheets (URL is set in config.js) -->
+<section class="section" id="rsvp">
+<div class="eyebrow">Kindly Respond</div>
+<h2 style="font-size:clamp(30px,4.5vw,48px);color:var(--olive-dark);">Will You Join Us?</h2>
+<div class="rsvp-card">
+<form id="rsvp-form">
+<div class="field"><label for="r-name">Guest Name</label><input autocomplete="name" id="r-name" maxlength="80" name="name" placeholder="Your full name" required="" type="text"/></div>
+<div class="field"><label for="r-phone">Mobile Number</label><input autocomplete="tel" id="r-phone" inputmode="tel" maxlength="20" name="phone" placeholder="e.g. +91 98470 12345" required="" type="tel"/></div>
+<div class="field"><label for="r-guests">Number of Guests</label><input id="r-guests" inputmode="numeric" max="20" min="1" name="guests" required="" type="number" value="1"/></div>
+<fieldset class="rsvp-events" id="rsvp-events"><legend>Which celebration(s) will you attend?</legend><label><input name="events" type="checkbox" value="Carnival Night"/> Carnival Night · 6 Jan</label><label><input name="events" type="checkbox" value="Cocktail Night"/> Cocktail Night · 7 Jan</label><label><input name="events" type="checkbox" value="Wedding"/> Wedding · 9 Jan</label><label><input name="events" type="checkbox" value="Reception"/> Reception · 10 Jan</label></fieldset>
+<div class="field"><label for="r-message">Message <span style="opacity:.65">(optional)</span></label><textarea id="r-message" maxlength="500" name="message" placeholder="Leave your blessings…" rows="3"></textarea></div>
+<input aria-hidden="true" autocomplete="off" class="hp" name="website" tabindex="-1" type="text"/>
+<button class="rsvp-submit" type="submit">Send RSVP</button>
+<p aria-live="polite" class="rsvp-status" id="rsvp-status" role="status"></p>
+</form>
+<div class="rsvp-success" id="rsvp-success" role="status"><h3 class="serif">Thank you!</h3><p id="rsvp-thanks">Your RSVP has been received. We can’t wait to celebrate with you.</p></div>
+<p class="rsvp-note">Your response goes straight to the hosts’ guest list.</p>
 </div>
 </section>
 <!-- LOCATION -->
@@ -2276,22 +2444,7 @@ html {scroll-padding-top:74px;scroll-behavior:smooth;} .footer-actions .footer-s
 <div class="loc-pin">📍</div>
 <div class="eyebrow">We Can't Wait To Celebrate With You</div>
 <h2 style="font-size:clamp(30px,4.5vw,46px);color:var(--olive-dark);">Celebration Venues</h2>
-<div class="location-card"><div class="venue-row"><div class="venue-info"><div class="v-label">Carnival Night</div><div class="v-name serif">Tarang Farm House (Tarang Resort)</div><div class="v-addr">Kadalundi, Kozhikode, Kerala, India</div></div><div class="venue-actions"><a aria-label="Open Carnival Night in Google Maps" class="icon-btn" href="https://www.google.com/maps/search/?api=1&amp;query=Tarang%20Farm%20House%20%28Tarang%20Resort%29%2C%20Kadalundi%2C%20Kozhikode%2C%20Kerala%2C%20India" rel="noopener noreferrer" target="_blank" title="Open Google Maps">⌖</a><a aria-label="Navigate to Carnival Night" class="icon-btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=Tarang%20Farm%20House%20%28Tarang%20Resort%29%2C%20Kadalundi%2C%20Kozhikode%2C%20Kerala%2C%20India" rel="noopener noreferrer" target="_blank" title="Navigate">↗</a><button class="icon-btn" onclick="copyAddress('Tarang Farm House (Tarang Resort), Kadalundi, Kozhikode, Kerala, India')" title="Copy Address">⧉</button><img alt="Carnival Night location QR" class="venue-qr" loading="lazy" src="venues/carnival-qr.png"/></div></div><div class="venue-row"><div class="venue-info"><div class="v-label">Cocktail Night</div><div class="v-name serif">Thrithi, By The River</div><div class="v-addr">Kadalundi, Kozhikode, Kerala, India</div></div><div class="venue-actions"><a aria-label="Open Cocktail Night in Google Maps" class="icon-btn" href="https://www.google.com/maps/search/?api=1&amp;query=Thrithi%2C%20By%20The%20River%2C%20Kadalundi%2C%20Kozhikode%2C%20Kerala%2C%20India" rel="noopener noreferrer" target="_blank" title="Open Google Maps">⌖</a><a aria-label="Navigate to Cocktail Night" class="icon-btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=Thrithi%2C%20By%20The%20River%2C%20Kadalundi%2C%20Kozhikode%2C%20Kerala%2C%20India" rel="noopener noreferrer" target="_blank" title="Navigate">↗</a><button class="icon-btn" onclick="copyAddress('Thrithi, By The River, Kadalundi, Kozhikode, Kerala, India')" title="Copy Address">⧉</button><img alt="Cocktail Night location QR" class="venue-qr" loading="lazy" src="venues/cocktail-qr.png"/></div></div><div class="venue-row"><div class="venue-info"><div class="v-label">Wedding Ceremony</div><div class="v-name serif">K-Hills Convention Centre</div><div class="v-addr">Ramanattukara–Farook College Road, Farook College, Kozhikode, Kerala, India</div></div><div class="venue-actions"><a aria-label="Open Wedding Ceremony in Google Maps" class="icon-btn" href="https://www.google.com/maps/search/?api=1&amp;query=K-Hills%20Convention%20Centre%2C%20Ramanattukara%E2%80%93Farook%20College%20Road%2C%20Farook%20College%2C%20Kozhikode%2C%20Kerala%2C%20India" rel="noopener noreferrer" target="_blank" title="Open Google Maps">⌖</a><a aria-label="Navigate to Wedding Ceremony" class="icon-btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=K-Hills%20Convention%20Centre%2C%20Ramanattukara%E2%80%93Farook%20College%20Road%2C%20Farook%20College%2C%20Kozhikode%2C%20Kerala%2C%20India" rel="noopener noreferrer" target="_blank" title="Navigate">↗</a><button class="icon-btn" onclick="copyAddress('K-Hills Convention Centre, Ramanattukara–Farook College Road, Farook College, Kozhikode, Kerala, India')" title="Copy Address">⧉</button><img alt="Wedding Ceremony location QR" class="venue-qr" loading="lazy" src="venues/wedding-qr.png"/></div></div><div class="venue-row"><div class="venue-info"><div class="v-label">Wedding Reception</div><div class="v-name serif">Malabar Marina Convention Centre</div><div class="v-addr">Kerala Tilery, Feroke, near AWH College, Cheruvannur, Kozhikode, Kerala, India</div></div><div class="venue-actions"><a aria-label="Open Wedding Reception in Google Maps" class="icon-btn" href="https://www.google.com/maps/search/?api=1&amp;query=Malabar%20Marina%20Convention%20Centre%2C%20Kerala%20Tilery%2C%20Feroke%2C%20near%20AWH%20College%2C%20Cheruvannur%2C%20Kozhikode%2C%20Kerala%2C%20India" rel="noopener noreferrer" target="_blank" title="Open Google Maps">⌖</a><a aria-label="Navigate to Wedding Reception" class="icon-btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=Malabar%20Marina%20Convention%20Centre%2C%20Kerala%20Tilery%2C%20Feroke%2C%20near%20AWH%20College%2C%20Cheruvannur%2C%20Kozhikode%2C%20Kerala%2C%20India" rel="noopener noreferrer" target="_blank" title="Navigate">↗</a><button class="icon-btn" onclick="copyAddress('Malabar Marina Convention Centre, Kerala Tilery, Feroke, near AWH College, Cheruvannur, Kozhikode, Kerala, India')" title="Copy Address">⧉</button><img alt="Wedding Reception location QR" class="venue-qr" loading="lazy" src="venues/reception-qr.png"/></div></div><iframe class="map-embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=K-Hills+Convention+Centre+Kozhikode&amp;output=embed" title="Wedding ceremony location map"></iframe></div>
-</div>
-</section>
-<!-- RSVP -->
-<section class="section" id="rsvp">
-<div class="eyebrow">Kindly Respond</div>
-<h2 style="font-size:clamp(30px,4.5vw,48px);color:var(--olive-dark);">Will You Join Us?</h2>
-<div class="rsvp-card">
-<form id="rsvp-form"><div class="field"><label for="r-name">Full Name</label><input autocomplete="name" id="r-name" name="name" placeholder="Your name" required="" type="text"/></div>
-<div class="field"><label for="r-phone">Phone Number</label><input autocomplete="tel" id="r-phone" inputmode="tel" name="phone" placeholder="Your phone number" required="" type="tel"/></div>
-<div class="field"><label for="r-guests">Number of Guests</label><input id="r-guests" max="30" min="1" name="guests" required="" type="number" value="1"/></div>
-<div class="field"><label>Will you attend?</label><div class="attend-toggle"><button class="active" data-val="yes" onclick="toggleAttend(this)" type="button">COUNT ME IN</button><button data-val="no" onclick="toggleAttend(this)" type="button">SENDING LOVE</button></div></div>
-<fieldset class="rsvp-events" id="rsvp-events"><legend>Which celebration(s) will you attend?</legend><label><input name="events" type="checkbox" value="Carnival Night — 6 January"/> Carnival Night · 6 Jan</label><label><input name="events" type="checkbox" value="Cocktail Night — 7 January"/> Cocktail Night · 7 Jan</label><label><input name="events" type="checkbox" value="Wedding — 9 January"/> Wedding · 9 Jan</label><label><input name="events" type="checkbox" value="Reception — 10 January"/> Reception · 10 Jan</label></fieldset>
-<div class="field"><label for="r-message">Message for the Couple <span style="opacity:.65">(optional)</span></label><textarea id="r-message" name="message" placeholder="Leave your blessings…" rows="3"></textarea></div>
-<button class="rsvp-submit" type="submit">Review &amp; Send RSVP on WhatsApp ↗</button></form>
-<p class="rsvp-note">Your RSVP opens in WhatsApp. Please tap Send there to confirm your response with the hosts.</p>
+<div class="location-card"><div class="venue-grid"><article class="venue-card"><img alt="Tarang Resort" class="venue-photo" height="625" loading="lazy" src="venues/carnival-photo.jpg" width="1000"/><div class="venue-body"><div class="v-label">Carnival Night · <b>6 Jan</b></div><h3 class="v-name serif">Tarang Resort</h3><div class="v-addr">Kadalundi, Kozhikode, Kerala, India</div><div class="venue-cta"><a class="btn solid" href="https://www.google.com/maps/dir/?api=1&amp;destination=Tarang%20Resort%2C%20Kadalundi%2C%20Kozhikode%2C%20Kerala%2C%20India" rel="noopener noreferrer" target="_blank">Get Directions ↗</a><button class="link-btn" onclick="copyAddress('Tarang Resort, Kadalundi, Kozhikode, Kerala, India')" type="button">Copy address</button></div></div></article><article class="venue-card"><img alt="Thrithi by the River" class="venue-photo" height="625" loading="lazy" src="venues/cocktail-photo.jpg" width="1000"/><div class="venue-body"><div class="v-label">Cocktail Night · <b>7 Jan</b></div><h3 class="v-name serif">Thrithi by the River</h3><div class="v-addr">Kadalundi, Kozhikode, Kerala, India</div><div class="venue-cta"><a class="btn solid" href="https://www.google.com/maps/dir/?api=1&amp;destination=Thrithi%20by%20the%20River%2C%20Kadalundi%2C%20Kozhikode%2C%20Kerala%2C%20India" rel="noopener noreferrer" target="_blank">Get Directions ↗</a><button class="link-btn" onclick="copyAddress('Thrithi by the River, Kadalundi, Kozhikode, Kerala, India')" type="button">Copy address</button></div></div></article><article class="venue-card"><img alt="K-Hills Convention Centre" class="venue-photo" height="625" loading="lazy" src="venues/wedding-photo.jpg" width="1000"/><div class="venue-body"><div class="v-label">The Wedding · <b>9 Jan</b></div><h3 class="v-name serif">K-Hills Convention Centre</h3><div class="v-addr">Farook College, Kozhikode, Kerala, India</div><div class="venue-cta"><a class="btn solid" href="https://www.google.com/maps/dir/?api=1&amp;destination=K-Hills%20Convention%20Centre%2C%20Farook%20College%2C%20Kozhikode%2C%20Kerala%2C%20India" rel="noopener noreferrer" target="_blank">Get Directions ↗</a><button class="link-btn" onclick="copyAddress('K-Hills Convention Centre, Farook College, Kozhikode, Kerala, India')" type="button">Copy address</button></div></div></article><article class="venue-card"><img alt="Malabar Marina Convention Centre" class="venue-photo" height="625" loading="lazy" src="venues/reception-photo.jpg" width="1000"/><div class="venue-body"><div class="v-label">The Reception · <b>10 Jan</b></div><h3 class="v-name serif">Malabar Marina Convention Centre</h3><div class="v-addr">Kozhikode, Kerala, India</div><div class="venue-cta"><a class="btn solid" href="https://www.google.com/maps/dir/?api=1&amp;destination=Malabar%20Marina%20Convention%20Centre%2C%20Kozhikode%2C%20Kerala%2C%20India" rel="noopener noreferrer" target="_blank">Get Directions ↗</a><button class="link-btn" onclick="copyAddress('Malabar Marina Convention Centre, Kozhikode, Kerala, India')" type="button">Copy address</button></div></div></article></div></div>
 </div>
 </section>
 <!-- FOOTER -->
@@ -2308,7 +2461,9 @@ html {scroll-padding-top:74px;scroll-behavior:smooth;} .footer-actions .footer-s
 <div class="footer-actions"><button class="btn footer-share" onclick="shareInvite()" type="button">Share Invitation ↗</button></div>
 </div>
 </section>
+<div class="site-credit-bar"><p class="site-credit">Designed &amp; developed by <a href="https://sahilmuhd.com/" rel="noopener noreferrer" target="_blank">Sahil</a></p></div>
 </div>
+<script src="config.js"></script>
 <script>
 (() => {
   'use strict';
@@ -2345,7 +2500,6 @@ html {scroll-padding-top:74px;scroll-behavior:smooth;} .footer-actions .footer-s
     $$('.hero-names .char').forEach((el,i)=>setTimeout(()=>el.classList.add('in'),i*48));
   }
   openBtn.addEventListener('click',openInvitation);
-  $('#intro-video').addEventListener('error',()=>{ intro.style.backgroundImage="url('covers/intro-poster.jpg')"; intro.style.backgroundSize='cover'; });
   document.addEventListener('keydown',e=>{if(e.key==='Enter' && !intro.classList.contains('fade-out') && document.activeElement===openBtn)openInvitation();});
   // Accessible name reveal
   $$('#hero-names .name-part').forEach(el=>{
@@ -2361,8 +2515,11 @@ html {scroll-padding-top:74px;scroll-behavior:smooth;} .footer-actions .footer-s
   $$('.photo-card,.event-chapter,.tl-item').forEach(el=>io.observe(el));
   // Native scrolling; reference transitions are CSS-based and no CDN scripts are necessary.
   const videos=$$('.event-video');
+  // ---- Event videos: silent autoplay while visible; optional full screen ----
+  const fsEl=()=>document.fullscreenElement||document.webkitFullscreenElement;
   const videoObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{
     const v=entry.target;
+    if(v.dataset.fs)return;                       // leave it alone while full screen
     if(entry.isIntersecting){videos.filter(x=>x!==v).forEach(x=>x.pause());v.play().catch(()=>{});}
     else v.pause();
   }),{threshold:.20});
@@ -2370,10 +2527,25 @@ html {scroll-padding-top:74px;scroll-behavior:smooth;} .footer-actions .footer-s
   window.goFullscreen=(wrap)=>{
     const v=wrap.querySelector('video');
     if(!v)return;
-    if(v.requestFullscreen) v.requestFullscreen().catch(()=>{});
-    else if(v.webkitEnterFullscreen) v.webkitEnterFullscreen();
-    v.play().catch(()=>{});
+    v.dataset.fs='1';v.controls=true;v.play().catch(()=>{});
+    const req=v.requestFullscreen||v.webkitRequestFullscreen;
+    if(req){try{const p=req.call(v);if(p&&p.catch)p.catch(()=>{});}catch(e){}}
+    else if(v.webkitEnterFullscreen)v.webkitEnterFullscreen();   // iPhone Safari
   };
+  function leaveFullscreen(){videos.forEach(v=>{if(v.dataset.fs){delete v.dataset.fs;v.controls=false;}});}
+  document.addEventListener('fullscreenchange',()=>{if(!fsEl())leaveFullscreen();});
+  document.addEventListener('webkitfullscreenchange',()=>{if(!fsEl())leaveFullscreen();});
+  videos.forEach(v=>v.addEventListener('webkitendfullscreen',leaveFullscreen));
+  // ---- Photo gallery arrows (swiping also works) ----
+  (function(){const w=document.getElementById('photoWall');if(!w)return;
+    const step=()=>{const c=w.querySelector('.photo-card');return c?c.getBoundingClientRect().width+24:300;};
+    const pv=document.querySelector('.gal-prev'),nx=document.querySelector('.gal-next');
+    pv&&pv.addEventListener('click',()=>w.scrollBy({left:-step(),behavior:'smooth'}));
+    nx&&nx.addEventListener('click',()=>w.scrollBy({left:step(),behavior:'smooth'}));
+  })();
+  // ---- Wedding / Reception images: reveal + gentle motion when scrolled into view ----
+  const artObs=new IntersectionObserver(es=>es.forEach(en=>{en.target.classList.toggle('in-view',en.isIntersecting);if(en.isIntersecting)en.target.closest('.art-chapter').classList.add('text-in');}),{threshold:.25});
+  $$('[data-art]').forEach(el=>artObs.observe(el));
   $$('.event-video-wrap').forEach(el=>el.addEventListener('keydown',e=>{
     if(e.key==='Enter'||e.key===' '){e.preventDefault();window.goFullscreen(el);}
   }));
@@ -2388,7 +2560,7 @@ html {scroll-padding-top:74px;scroll-behavior:smooth;} .footer-actions .footer-s
     }
     reset();
     const resize=new ResizeObserver(()=>{if(!scratched) reset();});resize.observe(wrap);
-    function reveal(){if(scratched)return;scratched=true;scratch.style.opacity='0';scratch.style.pointerEvents='none';hint.textContent='Save the date · 9 January 2027';hint.classList.add('done');}
+    function reveal(){if(scratched)return;scratched=true;scratch.style.opacity='0';scratch.style.pointerEvents='none';hint.style.display='none';hint.classList.add('done');(function(){var c=document.querySelector('.sd-count');if(c)c.classList.add('show');})();}
     function erase(e){let r=scratch.getBoundingClientRect();context.globalCompositeOperation='destination-out';context.beginPath();context.arc(e.clientX-r.left,e.clientY-r.top,36,0,Math.PI*2);context.fill();if(++strokes>18)reveal();}
     scratch.addEventListener('pointerdown',e=>{started=true;scratch.setPointerCapture(e.pointerId);erase(e);});
     scratch.addEventListener('pointermove',e=>{if(started)erase(e);});
@@ -2405,15 +2577,17 @@ html {scroll-padding-top:74px;scroll-behavior:smooth;} .footer-actions .footer-s
   }
   tick();setInterval(tick,1000);
   const events={
-    carnival:{title:'Carnival Night',dt:'20270106T160000',end:'20270106T200000',loc:'Tarang Farm House (Tarang Resort), Kadalundi, Kozhikode',desc:'Dress code: Pop-Up Colours'},
-    cocktail:{title:'Cocktail Night',dt:'20270107T170000',end:'20270107T220000',loc:'Thrithi, By The River, Kadalundi, Kozhikode',desc:'Dress code: Glitz in Dark Shades'},
-    wedding:{title:'Wedding Ceremony',dt:'20270109T110000',end:'20270109T114500',loc:'K-Hills Convention Centre, Farook College, Kozhikode',desc:'Muhurtham · Traditional Attire'},
-    reception:{title:'Wedding Reception',dt:'20270110T170000',end:'20270110T210000',loc:'Malabar Marina Convention Centre, Cheruvannur, Kozhikode',desc:'Dress code: Party Wear'}
+    carnival:{title:'Carnival Night',dt:'20270106T160000',end:'20270106T200000',loc:'Tarang Resort, Kadalundi, Kozhikode',desc:'Dress code: Pop Up Colours'},
+    cocktail:{title:'Cocktail Night',dt:'20270107T170000',end:'20270107T220000',loc:'Thrithi by the River, Kadalundi, Kozhikode',desc:'Theme: Glitz in Dark Shades'},
+    wedding:{title:'The Wedding',dt:'20270109T110000',end:'20270109T114500',loc:'K-Hills Convention Centre, Farook College, Kozhikode',desc:'11:00 AM – 11:45 AM · Dress code: Traditional'},
+    reception:{title:'The Reception',dt:'20270110T170000',end:'20270110T210000',loc:'Malabar Marina Convention Centre, Kozhikode',desc:'Dress code: Party Wear'}
   };
+  // Event times are India Standard Time (UTC+05:30); converted to UTC so every calendar app agrees.
+  const toUTC=t=>new Date(t.replace(/(\d{4})(\d{2})(\d{2})T(\d{2})(\d{2})(\d{2})/,'$1-$2-$3T$4:$5:$6+05:30')).toISOString().replace(/[-:]|\.\d{3}/g,'');
   function esc(v){return v.replace(/\\/g,'\\\\').replace(/,/g,'\\,').replace(/;/g,'\\;').replace(/\n/g,'\\n');}
   window.downloadICS=key=>{
     const e=events[key];if(!e)return;
-    const lines=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Athul Kiran Wedding//EN','BEGIN:VEVENT','UID:'+key+'-athul-kiran-2027@example.invalid','SUMMARY:'+esc('Athul & Kiran — '+e.title),'DESCRIPTION:'+esc(e.desc),'LOCATION:'+esc(e.loc),'DTSTART;TZID=Asia/Kolkata:'+e.dt,'DTEND;TZID=Asia/Kolkata:'+e.end,'END:VEVENT','END:VCALENDAR'];
+    const lines=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Athul Kiran Wedding//EN','BEGIN:VEVENT','UID:'+key+'-athul-kiran-2027@wedding.invalid','SUMMARY:'+esc('Athul & Kiran — '+e.title),'DESCRIPTION:'+esc(e.desc),'LOCATION:'+esc(e.loc),'DTSTAMP:'+toUTC(e.dt),'DTSTART:'+toUTC(e.dt),'DTEND:'+toUTC(e.end),'END:VEVENT','END:VCALENDAR'];
     const blob=new Blob([lines.join('\r\n')+'\r\n'],{type:'text/calendar;charset=utf-8'});
     const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='athul-kiran-'+key+'.ics';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),1500);
   };
@@ -2432,27 +2606,46 @@ html {scroll-padding-top:74px;scroll-behavior:smooth;} .footer-actions .footer-s
   lightbox.addEventListener('click',e=>{if(e.target===lightbox)close();});
   document.addEventListener('keydown',e=>{if(!lightbox.classList.contains('open'))return;if(e.key==='Escape')close();if(e.key==='ArrowRight')move(1);if(e.key==='ArrowLeft')move(-1);});
   $$('.photo-tile').forEach((el,i)=>el.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();window.openLightbox(i);}}));
-  // Event RSVP: guest explicitly sends WhatsApp message to published host number.
-  const RSVP_WHATSAPP_NUMBER='919847509050';  // Published host contact; change in index.html if requested.
-  let attending='yes';
-  window.toggleAttend=btn=>{
-    $$('.attend-toggle button').forEach(x=>x.classList.toggle('active',x===btn));
-    attending=btn.dataset.val;
-    $('#rsvp-events').style.display=attending==='yes'?'grid':'none';
-  };
-  $('#rsvp-form').addEventListener('submit',e=>{
-    e.preventDefault();const form=e.currentTarget;
-    if(!form.reportValidity())return;
-    const name=$('#r-name').value.trim(),phone=$('#r-phone').value.trim(),guests=$('#r-guests').value;
-    const selected=$$('input[name="events"]:checked').map(el=>el.value);
-    if(attending==='yes' && !selected.length){showToast('Select at least one celebration');$('#rsvp-events').scrollIntoView({behavior:'smooth',block:'center'});return;}
-    const lines=['RSVP — Athul Raj & Kiran Santhosh','Name: '+name,'Phone: '+phone,'Response: '+(attending==='yes'?'Attending':'Unable to attend')];
-    if(attending==='yes'){lines.push('Number of guests: '+guests,'Events: '+selected.join(', '));}
-    if($('#r-message').value.trim())lines.push('Message: '+$('#r-message').value.trim());
-    const href='https://wa.me/'+RSVP_WHATSAPP_NUMBER+'?text='+encodeURIComponent(lines.join('\n'));
-    // Navigation in direct response to a guest click; do not claim a response is recorded.
-    const a=document.createElement('a');a.href=href;a.target='_blank';a.rel='noopener noreferrer';document.body.appendChild(a);a.click();a.remove();
-    showToast('Please tap Send in WhatsApp to confirm your RSVP');
+  // ===================== RSVP → Google Sheets =====================
+  // The Google Apps Script Web App URL is NOT set here — edit APPS_SCRIPT_URL in  config.js
+  const CFG=window.WEDDING_CONFIG||{};
+  const rsvpForm=$('#rsvp-form'),statusEl=$('#rsvp-status'),submitBtn=rsvpForm.querySelector('.rsvp-submit');
+  const newId=()=>(window.crypto&&crypto.randomUUID)?crypto.randomUUID():Date.now().toString(36)+Math.random().toString(36).slice(2);
+  let submissionId=newId();   // same id on retries → the sheet ignores accidental duplicates
+  function setStatus(kind,html){statusEl.className='rsvp-status'+(kind?' '+kind:'');statusEl.innerHTML=html||'';}
+  function scriptUrl(){const u=(CFG.APPS_SCRIPT_URL||'').trim();return /^https?:\/\//i.test(u)?u:'';}
+  rsvpForm.addEventListener('submit',async e=>{
+    e.preventDefault();
+    if(!rsvpForm.reportValidity())return;
+    if(rsvpForm.elements.website.value)return;            // honeypot: real guests leave this empty
+    if($('#r-phone').value.replace(/\\D/g,'').length<8){setStatus('error','Please enter a valid mobile number.');$('#r-phone').focus();return;}
+    const evs=$$('input[name="events"]:checked').map(el=>el.value);
+    if(!evs.length){setStatus('error','Please select at least one celebration you will attend.');$('#rsvp-events').scrollIntoView({behavior:'smooth',block:'center'});return;}
+    const url=scriptUrl();
+    if(!url){console.warn('RSVP is not connected: paste your Apps Script Web App URL into config.js (APPS_SCRIPT_URL).');
+      setStatus('error','RSVP is not connected yet. (Site owner: paste the Apps Script URL into config.js.)');return;}
+    const payload={name:$('#r-name').value.trim(),phone:$('#r-phone').value.trim(),guests:Number($('#r-guests').value),
+      events:evs,message:$('#r-message').value.trim(),submissionId,page:location.href};
+    const label=submitBtn.textContent;submitBtn.disabled=true;submitBtn.textContent='Sending…';setStatus('','');
+    const ctl=new AbortController(),timer=setTimeout(()=>ctl.abort(),20000);
+    try{
+      // text/plain keeps this a "simple" request, so Apps Script needs no CORS pre-flight
+      const res=await fetch(url,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(payload),redirect:'follow',signal:ctl.signal});
+      const data=await res.json();
+      if(!data||!data.ok)throw new Error((data&&data.error)||'The RSVP could not be saved');
+      rsvpForm.hidden=true;
+      $('#rsvp-thanks').textContent='Thank you, '+payload.name+'! Your RSVP for '+evs.join(', ')+' has been received. We can’t wait to celebrate with you.';
+      $('#rsvp-success').classList.add('show');
+      submissionId=newId();
+    }catch(err){
+      console.error('RSVP failed:',err);
+      let html='Sorry, we couldn’t send your RSVP. Please check your connection and try again.';
+      const wa=(CFG.WHATSAPP_FALLBACK_NUMBER||'').replace(/\D/g,'');
+      if(wa){const txt=['RSVP — Athul Raj & Kiran Santhosh','Name: '+payload.name,'Mobile: '+payload.phone,'Guests: '+payload.guests,'Events: '+evs.join(', ')]
+        .concat(payload.message?['Message: '+payload.message]:[]).join('\n');
+        html+=' Or <a href="https://wa.me/'+wa+'?text='+encodeURIComponent(txt)+'" rel="noopener noreferrer" target="_blank">send it on WhatsApp instead</a>.';}
+      setStatus('error',html);
+    }finally{clearTimeout(timer);submitBtn.disabled=false;submitBtn.textContent=label;}
   });
 })();
 </script>
