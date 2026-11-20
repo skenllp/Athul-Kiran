@@ -2427,7 +2427,7 @@ html {scroll-padding-top:74px;scroll-behavior:smooth;} .footer-actions .footer-s
 <button aria-label="Next" id="lightbox-next">›</button>
 </div>
 <!-- RSVP — submissions are saved to Google Sheets (URL is set in config.js) -->
-<section class="section" id="rsvp">
+<!-- <section class="section" id="rsvp">
 <div class="eyebrow">Kindly Respond</div>
 <h2 style="font-size:clamp(30px,4.5vw,48px);color:var(--olive-dark);">Will You Join Us?</h2>
 <div class="rsvp-card">
@@ -2444,7 +2444,7 @@ html {scroll-padding-top:74px;scroll-behavior:smooth;} .footer-actions .footer-s
 <div class="rsvp-success" id="rsvp-success" role="status"><h3 class="serif">Thank you!</h3><p id="rsvp-thanks">Your RSVP has been received. We can’t wait to celebrate with you.</p></div>
 <p class="rsvp-note">Your response goes straight to the hosts’ guest list.</p>
 </div>
-</section>
+</section> -->
 <!-- LOCATION -->
 <section class="section marble-bg" id="location">
 <div class="bg-content">
@@ -2615,25 +2615,50 @@ html {scroll-padding-top:74px;scroll-behavior:smooth;} .footer-actions .footer-s
   $$('.photo-tile').forEach((el,i)=>el.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();window.openLightbox(i);}}));
   // ===================== RSVP → Google Sheets =====================
   // The Google Apps Script Web App URL is NOT set here — edit APPS_SCRIPT_URL in  config.js
+  // Load wedding configuration from config.js (contains APPS_SCRIPT_URL and WHATSAPP_FALLBACK_NUMBER)
   const CFG=window.WEDDING_CONFIG||{};
   const rsvpForm=$('#rsvp-form'),statusEl=$('#rsvp-status'),submitBtn=rsvpForm.querySelector('.rsvp-submit');
+  
+  // Generate unique submission ID to prevent duplicate entries if user clicks submit multiple times
   const newId=()=>(window.crypto&&crypto.randomUUID)?crypto.randomUUID():Date.now().toString(36)+Math.random().toString(36).slice(2);
   let submissionId=newId();   // same id on retries → the sheet ignores accidental duplicates
+  
+  // Display status messages (error/success) below the submit button
   function setStatus(kind,html){statusEl.className='rsvp-status'+(kind?' '+kind:'');statusEl.innerHTML=html||'';}
+  
+  // Validate and return the Google Apps Script URL from config
   function scriptUrl(){const u=(CFG.APPS_SCRIPT_URL||'').trim();return /^https?:\/\//i.test(u)?u:'';}
+  
+  // Form submission handler - validates input and sends data to Google Sheets
   rsvpForm.addEventListener('submit',async e=>{
-    e.preventDefault();
+    e.preventDefault();  // Stop form from submitting the traditional way (which would reload the page)
+    
+    // Step 1: Validate required fields using HTML5 validation
     if(!rsvpForm.reportValidity())return;
+    
+    // Step 2: Honeypot spam protection - bots fill this hidden field, real users don't
     if(rsvpForm.elements.website.value)return;            // honeypot: real guests leave this empty
+    
+    // Step 3: Validate phone number has at least 8 digits (removes all non-digit characters first)
     if($('#r-phone').value.replace(/\\D/g,'').length<8){setStatus('error','Please enter a valid mobile number.');$('#r-phone').focus();return;}
+    
+    // Step 4: Collect checked events - at least one event must be selected
     const evs=$$('input[name="events"]:checked').map(el=>el.value);
     if(!evs.length){setStatus('error','Please select at least one celebration you will attend.');$('#rsvp-events').scrollIntoView({behavior:'smooth',block:'center'});return;}
+    
+    // Step 5: Verify Google Apps Script URL is configured
     const url=scriptUrl();
     if(!url){console.warn('RSVP is not connected: paste your Apps Script Web App URL into config.js (APPS_SCRIPT_URL).');
       setStatus('error','RSVP is not connected yet. (Site owner: paste the Apps Script URL into config.js.)');return;}
+    
+    // Step 6: Build data object to send to Google Sheets
     const payload={name:$('#r-name').value.trim(),phone:$('#r-phone').value.trim(),guests:Number($('#r-guests').value),
       events:evs,message:$('#r-message').value.trim(),submissionId,page:location.href};
+    
+    // Step 7: Update UI to show submission in progress
     const label=submitBtn.textContent;submitBtn.disabled=true;submitBtn.textContent='Sending…';setStatus('','');
+    
+    // Step 8: Set 20-second timeout to prevent hanging if network/script is slow
     const ctl=new AbortController(),timer=setTimeout(()=>ctl.abort(),20000);
     try{
       // text/plain keeps this a "simple" request, so Apps Script needs no CORS pre-flight
